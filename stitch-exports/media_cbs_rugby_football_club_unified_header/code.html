@@ -1,0 +1,312 @@
+<!DOCTYPE html>
+
+<html class="light" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&amp;family=Barlow+Condensed:wght@500;600;700&amp;family=DM+Sans:wght@400;500;700&amp;family=Space+Grotesk:wght@500;700&amp;family=Manrope:wght@400;500;700&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<script id="tailwind-config">
+        tailwind.config = {
+          darkMode: "class",
+          theme: {
+            extend: {
+              colors: {
+                "on-surface-variant": "#42474f",
+                "on-primary-container": "#7ba2d5",
+                "surface-tint": "#376090",
+                "surface-dim": "#dcd9d9",
+                "error-container": "#ffdad6",
+                "tertiary-fixed": "#ffe08f",
+                "surface-container-lowest": "#ffffff",
+                "outline": "#737780",
+                "error": "#ba1a1a",
+                "on-primary-fixed-variant": "#1b4876",
+                "primary-container": "#003865",
+                "secondary": "#1d648b",
+                "primary": "#002241",
+                "on-primary-fixed": "#001c37",
+                "on-secondary-container": "#0e5c82",
+                "on-secondary": "#ffffff",
+                "outline-variant": "#c2c6d0",
+                "secondary-fixed-dim": "#90cdfa",
+                "tertiary-fixed-dim": "#e6c364",
+                "surface-container-low": "#f6f3f2",
+                "on-tertiary-fixed-variant": "#584400",
+                "secondary-fixed": "#c9e6ff",
+                "primary-fixed": "#d2e4ff",
+                "on-error": "#ffffff",
+                "on-secondary-fixed": "#001e2f",
+                "secondary-container": "#97d3ff",
+                "on-tertiary-fixed": "#241a00",
+                "primary-fixed-dim": "#a1c9ff",
+                "tertiary-container": "#c9a84c",
+                "inverse-primary": "#a1c9ff",
+                "on-surface": "#1c1b1b",
+                "surface-container": "#f0edec",
+                "surface": "#fcf8f8",
+                "surface-container-highest": "#e5e2e1",
+                "on-tertiary": "#ffffff",
+                "on-primary": "#ffffff",
+                "on-error-container": "#93000a",
+                "tertiary": "#755b00",
+                "surface-container-high": "#ebe7e7",
+                "surface-variant": "#e5e2e1",
+                "surface-bright": "#fcf8f8",
+                "background": "#fcf8f8",
+                "inverse-on-surface": "#f3f0ef",
+                "on-secondary-fixed-variant": "#004c6e",
+                "on-tertiary-container": "#4f3d00",
+                "inverse-surface": "#313030",
+                "on-background": "#1c1b1b"
+              },
+              fontFamily: {
+                "display": ["Bebas Neue"],
+                "headline": ["Barlow Condensed"],
+                "body": ["DM Sans"],
+                "label": ["Manrope"]
+              },
+              borderRadius: {"DEFAULT": "0px", "lg": "0px", "xl": "0px", "full": "9999px"},
+            },
+          },
+        }
+    </script>
+<style>
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+        }
+        .masonry-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+            grid-auto-rows: 10px;
+        }
+        .masonry-item-tall { grid-row: span 45; }
+        .masonry-item-short { grid-row: span 30; }
+        .masonry-item-medium { grid-row: span 38; }
+    </style>
+</head>
+<body class="bg-surface text-on-background font-body">
+<!-- TopAppBar -->
+<nav class="fixed top-0 w-full flex justify-between items-center px-8 py-4 z-50 bg-[#002241] dark:bg-[#0A0A0A]">
+<div class="text-2xl font-bold tracking-tighter text-[#FCF8F8] uppercase font-display">
+            CBS RFC
+        </div>
+<!-- Desktop Nav -->
+<div class="hidden md:flex items-center gap-8">
+<a class="text-[#FCF8F8] hover:text-[#C9A84C] transition-colors duration-200 font-['Space_Grotesk'] font-medium uppercase text-sm" href="#">HOME</a>
+<a class="text-[#FCF8F8] hover:text-[#C9A84C] transition-colors duration-200 font-['Space_Grotesk'] font-medium uppercase text-sm" href="#">ABOUT</a>
+<a class="text-[#FCF8F8] hover:text-[#C9A84C] transition-colors duration-200 font-['Space_Grotesk'] font-medium uppercase text-sm" href="#">EVENTS</a>
+<a class="text-[#FCF8F8] hover:text-[#C9A84C] transition-colors duration-200 font-['Space_Grotesk'] font-medium uppercase text-sm" href="#">ALUMNI</a>
+<a class="text-[#FCF8F8] hover:text-[#C9A84C] transition-colors duration-200 font-['Space_Grotesk'] font-medium uppercase text-sm" href="#">RECRUITS</a>
+<a class="text-[#FCF8F8] hover:text-[#C9A84C] transition-colors duration-200 font-['Space_Grotesk'] font-medium uppercase text-sm" href="#">SPONSORS</a>
+<a class="text-[#C9A84C] border-b-2 border-[#C9A84C] pb-1 font-bold font-['Space_Grotesk'] uppercase text-sm" href="#">MEDIA</a>
+<a class="text-[#FCF8F8] hover:text-[#C9A84C] transition-colors duration-200 font-['Space_Grotesk'] font-medium uppercase text-sm" href="#">RWC 2026</a>
+</div>
+<button class="bg-tertiary-container text-on-tertiary-container px-6 py-2 font-display text-lg tracking-wide hover:scale-95 transition-all duration-150 active:scale-90">
+            JOIN THE CLUB
+        </button>
+</nav>
+<!-- Main Content Canvas -->
+<main class="pt-20">
+<!-- Hero Section -->
+<section class="relative h-[716px] w-full overflow-hidden flex items-center justify-center">
+<div class="absolute inset-0 bg-primary z-10 opacity-40"></div>
+<img alt="Action rugby match" class="absolute inset-0 w-full h-full object-cover" data-alt="Intense rugby match action close up shot" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBV5ftDFGJOnEP_gLPX7kVzYqvK_oHe2CGKOJeeaFkewH1ff_nDo6XOuVAiH_of1-KPHDdZet8Ug-D6zDuB8yz3L45pzOZcdZU5m1ftgZWYRKtHhQGO0G7ZA9z8AqUwRVz5rLa7Ncs-IszChCCsPUq8YPLO_AW6kF0GaS2ilvwxbtHu7QtLgIVhjEXuguwG5dxemSv_HzDM7I7Xa7mVKxeeAmo9JbRCtRVuhaQaKa8CkG5JBDatgW6wzSbE3p0jfxczrxwqk8QDUrY"/>
+<div class="relative z-20 text-center px-4 max-w-4xl">
+<h1 class="font-display text-7xl md:text-9xl text-surface leading-none tracking-tight uppercase">
+                    ON THE PITCH <br/> <span class="text-tertiary-container">&amp; OFF IT</span>
+</h1>
+<div class="mt-6 flex justify-center gap-4">
+<span class="bg-surface/10 backdrop-blur-md px-4 py-1 text-surface font-headline uppercase tracking-widest text-sm border-l-2 border-tertiary-container">EST. 1981</span>
+<span class="bg-surface/10 backdrop-blur-md px-4 py-1 text-surface font-headline uppercase tracking-widest text-sm border-l-2 border-tertiary-container">COLUMBIA UNIVERSITY</span>
+</div>
+</div>
+</section>
+<!-- Featured Album Spotlight -->
+<section class="py-24 px-8 bg-surface">
+<div class="max-w-7xl mx-auto flex flex-col md:flex-row gap-16 items-center">
+<div class="w-full md:w-1/2">
+<div class="relative group cursor-pointer">
+<div class="absolute -top-4 -left-4 w-full h-full border-2 border-tertiary-container z-0 transition-transform group-hover:translate-x-2 group-hover:translate-y-2"></div>
+<img alt="Featured Album Cover" class="relative z-10 w-full aspect-[4/5] object-cover filter grayscale hover:grayscale-0 transition-all duration-700" data-alt="Rugby players huddling before match black and white" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDVrg4Z8Z7KWXRbnLWQhYyCGAO8pUEiZVI_p_8TA4Z3Zta0cAXD-mk29MordezfyeN9bOkRahNJHVeyhRvsHcVXJr0l0VjHo2gnSgqSR1zc7l565xmaD6h1b56J0JyV_An0Behz7fSu0Lmi7iI8_lHmKtzVaL7ApFeHUZTYHWPmSiU4wN__gkNKqvAwRvimTQeUjuec8ChUlX285A7JwA6yuatf99uFkRwtLIYojaHT1X7pM0hPHiRMD7anLKfjEgJuhlGNG3nEd3s"/>
+<div class="absolute bottom-4 left-4 z-20 bg-primary p-4 text-surface">
+<span class="font-headline text-xs uppercase tracking-[0.2em] text-tertiary-container">LATEST DROP</span>
+</div>
+</div>
+</div>
+<div class="w-full md:w-1/2 flex flex-col items-start">
+<h2 class="font-headline text-sm font-bold text-primary tracking-[0.3em] uppercase mb-4">FEATURED ALBUM</h2>
+<h3 class="font-display text-6xl text-primary leading-none uppercase mb-8">MBA WORLD CUP <br/>LAKE GARDA '24</h3>
+<p class="font-body text-lg text-on-surface-variant mb-10 max-w-md leading-relaxed">
+                        Relive the intensity, the grit, and the brotherhood of the 2024 World Cup campaign. From the opening kickoff to the final whistle, captured in high-definition editorial style.
+                    </p>
+<button class="bg-primary text-surface px-8 py-4 font-headline font-bold uppercase tracking-widest flex items-center gap-4 group transition-all hover:bg-primary-container">
+                        VIEW FULL GALLERY
+                        <span class="material-symbols-outlined group-hover:translate-x-2 transition-transform">arrow_forward</span>
+</button>
+</div>
+</div>
+</section>
+<!-- Filterable Photo Grid -->
+<section class="py-24 bg-surface-container-low px-8">
+<div class="max-w-7xl mx-auto">
+<div class="flex flex-col md:flex-row justify-between items-end mb-16 gap-8">
+<div>
+<h2 class="font-display text-5xl text-primary uppercase">PHOTO GRID</h2>
+<div class="h-1 w-24 bg-tertiary-container mt-2"></div>
+</div>
+<div class="flex flex-wrap gap-4 font-headline text-sm font-bold uppercase tracking-widest">
+<button class="px-6 py-2 bg-primary text-surface">ALL</button>
+<button class="px-6 py-2 border border-outline-variant hover:border-primary transition-colors">MATCHES</button>
+<button class="px-6 py-2 border border-outline-variant hover:border-primary transition-colors">SOCIAL</button>
+<button class="px-6 py-2 border border-outline-variant hover:border-primary transition-colors">ALUMNI GAME</button>
+</div>
+</div>
+<!-- Masonry Layout -->
+<div class="masonry-grid gap-4">
+<!-- Item 1 -->
+<div class="masonry-item-tall relative group overflow-hidden bg-surface-container-highest">
+<img alt="Rugby tackle" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" data-alt="Action shot of a dynamic rugby tackle" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBu9YB9jwCjnlpc2pts19WfB9PwDEI6wzexOCd36xZ82iPsQ7c0EE_Ltu-LTpNZM6s0VC2BQtR3Xs36SkdSK0lbyL4UWWX3yoyWlG9fv9e_mkZ6RmbVCqbdeCNbfjpTqa1tvHHH0m0klRJ4hj1zTlkIN00B8ip9_1vL8Mmycm2fnKcZfBB1FLhgoHHDbeMa5Pjb_0OOGWdg30bJdOnVQQYSXp-Hc5qEkzSizJf8J_S-QyX_KbQuwTixePfw7IHs9UJ7EHnfjnvGSEg"/>
+<div class="absolute inset-0 bg-gradient-to-t from-primary/80 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-end p-6">
+<div>
+<p class="text-tertiary-container font-headline text-xs tracking-widest uppercase">MATCHES</p>
+<h4 class="text-surface font-display text-xl uppercase">vs Wharton FC</h4>
+</div>
+</div>
+</div>
+<!-- Item 2 -->
+<div class="masonry-item-short relative group overflow-hidden bg-surface-container-highest">
+<img alt="Team huddle" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" data-alt="Rugby team cheering after victory" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAHx10Xhlhq7_g0OhXe4f1x-GaGtGjwUNmLpZ6ZlSvmepdz_qrEQWtazdmCGUo7xNORWtwX2DaYpdow4RvDRbdSEHAsGimy1GyhAC2gmzn-bCyqTKJvSxD6dRgeJi_KKLIPlvWqd6U5SJURxwtdszz1QEaZNRJ8u-YEcTK4jxKwU1f9_6IWTG7ar6M_SGD2tgZCznVAUzUpdoHTSNsl6uls3TP7rl0NA27QNMhRsZOanpzajmISbN-ndrC1i1yNTJDVJVWBU1iVjOg"/>
+<div class="absolute inset-0 bg-gradient-to-t from-primary/80 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-end p-6">
+<div>
+<p class="text-tertiary-container font-headline text-xs tracking-widest uppercase">SOCIAL</p>
+<h4 class="text-surface font-display text-xl uppercase">POST-MATCH TRADITION</h4>
+</div>
+</div>
+</div>
+<!-- Item 3 -->
+<div class="masonry-item-medium relative group overflow-hidden bg-surface-container-highest">
+<img alt="Rugby ball on grass" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" data-alt="Close up of a professional rugby ball on green field" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCBuqaERj_qMlPgnb3TCj4zQKzMbTAmcAkiHvvKuYC-I7fgeZmZW6_dJU4oHs680kYUxQe4ccUO-UccUkevDzhZnHuvbG05MAW8aSiY8d9RabwMICrItq1hL5nq0WaYJ6wVy8BqLdHfJ_jJsfOe3fzfYFO0Y2rReYJFaPbv_FnnkocXu5Sef69vOlDb7Mn9GDd6feCNGGgTmlfe8Wz3QvCg2itLhl2AlIeDUl6PxYK_6ak9wPRTJkRD8R8broPj0mRR6zKU3ZXR8E4"/>
+<div class="absolute inset-0 bg-gradient-to-t from-primary/80 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-end p-6">
+<div>
+<p class="text-tertiary-container font-headline text-xs tracking-widest uppercase">DETAIL</p>
+<h4 class="text-surface font-display text-xl uppercase">THE TOOLS OF THE TRADE</h4>
+</div>
+</div>
+</div>
+<!-- Item 4 -->
+<div class="masonry-item-medium relative group overflow-hidden bg-surface-container-highest">
+<img alt="Lineout action" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" data-alt="Dynamic lineout jumping action in rugby match" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDH-t5wx7NWXShAGsBvu_vNHiOi8NlSbmnJTDwHHiZrkRAqib1ryW7XcDkSXmpa0iHUrhkwLyLsxBFtoMNcFYogz0jmG6-8di6jLBnk5Xmlup8NdUF1sE-FpvnmtV1PEnJYfJdlU4FnNeq6l6Ngh0MN7_1gP9ChMJR_7RySkkqbe-c5xdqXCbxppJ99EdEIXDnTXWetIArnJiWAW4AXwVuxajyOJeQ0Ig1dA68MpSrwLf4tHLW-kIH76adtfOS6puLr6AHt9yC0S5Q"/>
+<div class="absolute inset-0 bg-gradient-to-t from-primary/80 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-end p-6">
+<div>
+<p class="text-tertiary-container font-headline text-xs tracking-widest uppercase">MATCHES</p>
+<h4 class="text-surface font-display text-xl uppercase">THE REACH</h4>
+</div>
+</div>
+</div>
+<!-- Item 5 -->
+<div class="masonry-item-tall relative group overflow-hidden bg-surface-container-highest">
+<img alt="Night stadium" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" data-alt="Stadium lights shining over empty field at dusk" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAP2UcW-sN5fhvGIXHATr7GxcFqP9ZCRwH4ygRkFuWpl6aAcdJ78CisyxczlJmJp-pMVA-hYAbVjF7Yp4PD5UfPFGGEONb2oZwq6GhnSxCJ-JrfpH1i2DY6XLCLlqFQrw607S2BAwzEPdXdtNzGZrFFtbPv4xyGLqY6zHP5YrbKLCHk0We76QRr1CLpuQSP0k95Mlujok4qpnMEcMTwtg0mPuqBQgywLuikzVkpR9_jQO4NE99ebFodjEppi00HgytvvPDaABxIkos"/>
+<div class="absolute inset-0 bg-gradient-to-t from-primary/80 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-end p-6">
+<div>
+<p class="text-tertiary-container font-headline text-xs tracking-widest uppercase">ALUMNI</p>
+<h4 class="text-surface font-display text-xl uppercase">HOMECOMING LIGHTS</h4>
+</div>
+</div>
+</div>
+<!-- Item 6 -->
+<div class="masonry-item-short relative group overflow-hidden bg-surface-container-highest">
+<img alt="Muddy cleats" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" data-alt="Dirty rugby cleats after a rain-soaked match" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAaulieNzDYfUzdBlX1wrDd12trWm78LRyG_hKiP_uYePHLWd3UYPj0n1rli8niXxToN0x87Uv1DUCfdJtG8Ksc6TpwPZ7x6hhbPF42vruEDvfK67UjhvOCwJN7V8mocBi0i8X9MRSyQWYpM46NCFJuSruzVhtgOylrUVFl9JTEhJoVH9qx24JUDQP9n7q6NlnCQZqmHaZeaei13mN-Naj49qlYgg7ddwXjZFbyEY_9fRmP-g0pgD_yjzLUZJmUKFwTp3L43mkfSFM"/>
+<div class="absolute inset-0 bg-gradient-to-t from-primary/80 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-end p-6">
+<div>
+<p class="text-tertiary-container font-headline text-xs tracking-widest uppercase">DETAIL</p>
+<h4 class="text-surface font-display text-xl uppercase">BADGE OF HONOR</h4>
+</div>
+</div>
+</div>
+</div>
+<div class="mt-16 flex justify-center">
+<button class="border-2 border-primary text-primary px-10 py-4 font-headline font-bold uppercase tracking-widest hover:bg-primary hover:text-surface transition-all">
+                        LOAD MORE MOMENTS
+                    </button>
+</div>
+</div>
+</section>
+<!-- Instagram Follow Row -->
+<section class="bg-primary pt-16">
+<div class="px-8 pb-12 flex justify-between items-end max-w-7xl mx-auto">
+<div>
+<h2 class="font-display text-4xl text-surface uppercase">@CBSRUGBY</h2>
+<p class="font-headline text-tertiary-container uppercase tracking-widest text-sm">FOLLOW FOR REAL-TIME UPDATES</p>
+</div>
+<a class="font-headline text-surface border-b border-surface/30 hover:border-tertiary-container transition-colors uppercase text-sm font-bold tracking-widest pb-1" href="#">FOLLOW ON INSTAGRAM</a>
+</div>
+<div class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-6 overflow-hidden">
+<div class="aspect-square relative group">
+<img alt="IG 1" class="w-full h-full object-cover group-hover:opacity-80 transition-opacity" data-alt="Rugby player training alone at sunrise" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBYo4RPB0L0XSQxwVMXZLmsAL8mOFMmDwOKvJnJASrFWTAgaZ08kYsGXsCUYq91-UTLmEDqmEkymwigTLUjtu4EaMwErUbdXn4uFlkhTKGtL5p5T-ht5PlqzLpjagalXW47xLUpXN4dSHKs8HwTPUqhZrsmN-1WikFAOC17SOv3hi5w4oUvUXVi3qykryhlU_zdUb_pUbAFaoTEsP3VrKy6spq_DfumfiQSVPbH7kkUdYNuIuKGfM17nhfMmT5z70SdvIu7ojal9w0"/>
+<div class="absolute inset-0 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity bg-primary/20">
+<span class="material-symbols-outlined text-surface text-3xl">favorite</span>
+</div>
+</div>
+<div class="aspect-square relative group">
+<img alt="IG 2" class="w-full h-full object-cover group-hover:opacity-80 transition-opacity" data-alt="Close up of rugby team jersey logo" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBbIK_IZsZbaGmMZALVznzuNyJsH4AeDrzxWaBR4fPjbPJ2MyK2vMq_2TnA6PK0jwr-QAyz8Zkw2VLrmE2tVqZODWSk4pChBKApmtWdNZQtjstZkSFA6b1VZ2s1RrBwOexSjtRRzi_8jKbYgGsIN9hrNaAb4z7rQco9uPuTNH7_uaZGEpZBAPZfNCLQ7AT8NxPEt8JdHTnl3kHMAEkmAyNhtauNM3iUAppVyqesK4ARuGaVxF6Crk_PmMUPeiyylhxOr7o1uKd8JNM"/>
+<div class="absolute inset-0 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity bg-primary/20">
+<span class="material-symbols-outlined text-surface text-3xl">favorite</span>
+</div>
+</div>
+<div class="aspect-square relative group">
+<img alt="IG 3" class="w-full h-full object-cover group-hover:opacity-80 transition-opacity" data-alt="Player drinking water during half time" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBWoBIsGfs9yvrXAM7SFyZ_m_kbwXd4DURWaS2N1HicLro_7UcCa9lDdIhTaVDeB0cj9HsR2REbkr1IpLxTt-LawRSacS35oYUvNHiZNdZsMDiw38-lzcuS3Vyr-xOe7r4u6mW18TfUFgpUjqv89mNu1x2DXy9qxBxWV427lu6h-IKB32lfQf9ddldBC3E6lID2dL_Ho4__7iferYvShKpC2_f06opl5u-CxLPzaxw5qieolh0y4PEbswpv31ZCHZE5ZxDWKd8G6xM"/>
+<div class="absolute inset-0 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity bg-primary/20">
+<span class="material-symbols-outlined text-surface text-3xl">favorite</span>
+</div>
+</div>
+<div class="aspect-square relative group">
+<img alt="IG 4" class="w-full h-full object-cover group-hover:opacity-80 transition-opacity" data-alt="Dramatic stadium light perspective from field level" src="https://lh3.googleusercontent.com/aida-public/AB6AXuASi-gJ_ittE8hf_rps55uxeVoA3A9pt_6jMQN-U0jmt_s-J8gxYzvNE9GdrZ3wtoNGJ2t3NG2Zyc-lO_W7NCngN-5yKFcg_lohlP5yAIyr0tMvUniBLWw0Y_X9Sk6-yfcLm0sg6v6OwReUySCPsY-ovpapEB7jYp33ywzz4kaisZFxg5OzfDwKSWgZDRhaOklEAl6FftP-R0-5ko3NQcvPin1LhKUz7AlwC896NUSfRrX1p3geRXpqyFyHoA0KKYkC-_HnTkopdsc"/>
+<div class="absolute inset-0 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity bg-primary/20">
+<span class="material-symbols-outlined text-surface text-3xl">favorite</span>
+</div>
+</div>
+<div class="aspect-square relative group">
+<img alt="IG 5" class="w-full h-full object-cover group-hover:opacity-80 transition-opacity" data-alt="Players high-fiving after a score" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCI8a4GGDHcLuJ8VeYb_jgWKjtCIjrOhhusC3c7XR16NzoVQi6oOTjkKAsMZbQ-AIvjAhCgkO9kbwX_KmcHVTII4X9BYQQBRICOusNMpnP5CIAcWTKl_aTJktRv56hkKS7rmWCnl8wp0hvEwYLpKdeAIh_w8DYfCRE3IkmPjTPqT2mUaL9R-udCS5VYMFT6AdFIk4lIvYwReg4b6RPBn9FxkcBlq_nadrhYSGYiw3GrfyoSUeu0Q8FkYX9oDKTOa_IMH3eNp0h0UYk"/>
+<div class="absolute inset-0 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity bg-primary/20">
+<span class="material-symbols-outlined text-surface text-3xl">favorite</span>
+</div>
+</div>
+<div class="aspect-square relative group">
+<img alt="IG 6" class="w-full h-full object-cover group-hover:opacity-80 transition-opacity" data-alt="Action focus on rugby ball in mid-air" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCPGNIGcl4BTkR-GtHD3de1w21etr5yteF1KUJ74DRzs_TKanbuTKgjd0J6Z6f4x4Vis94XUiM7sEIuYmchQsyCPYTrzKEqo_Xcfl303umugnZOcm9gv0S5o9EUj4-35gqzmHH_6Re1G_8iH2vLUKu2w1vvqUbIsZ3qSocOLXjcQQ8XKueRrvrF2W5FKHzQiAXYMLoiKaUu5C9MUFxa2er7hYPgi5kBtdXoNj59ddCh_hQHTT9uVFPvYC395UVClPAs77CGfwHK-2k"/>
+<div class="absolute inset-0 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity bg-primary/20">
+<span class="material-symbols-outlined text-surface text-3xl">favorite</span>
+</div>
+</div>
+</div>
+</section>
+</main>
+<!-- Footer -->
+<footer class="bg-[#002241] dark:bg-[#0A0A0A] py-12 px-8 border-t border-[#003865] dark:border-[#1A1A1A]">
+<div class="max-w-7xl mx-auto w-full flex flex-col md:flex-row justify-between items-center gap-12">
+<div class="flex flex-col items-center md:items-start gap-4">
+<div class="font-['Bebas_Neue'] text-3xl text-[#FCF8F8] tracking-widest">
+                    CBS RUGBY
+                </div>
+<p class="font-['Space_Grotesk'] text-[#E5E2E1] text-xs uppercase tracking-[0.2em] text-center md:text-left">
+                    © 2024 CBS RUGBY FOOTBALL CLUB. ALL RIGHTS RESERVED.
+                </p>
+</div>
+<div class="flex flex-wrap justify-center gap-8 font-['Space_Grotesk'] text-sm uppercase tracking-widest">
+<a class="text-[#E5E2E1] hover:text-[#C9A84C] transition-colors" href="#">Privacy Policy</a>
+<a class="text-[#E5E2E1] hover:text-[#C9A84C] transition-colors" href="#">Terms of Service</a>
+<a class="text-[#E5E2E1] hover:text-[#C9A84C] transition-colors" href="#">Contact Us</a>
+<a class="text-[#E5E2E1] hover:text-[#C9A84C] transition-colors" href="#">Support</a>
+</div>
+<div class="flex gap-6">
+<a class="text-[#FCF8F8] hover:text-[#C9A84C] transition-colors" href="#">
+<span class="material-symbols-outlined">share</span>
+</a>
+<a class="text-[#FCF8F8] hover:text-[#C9A84C] transition-colors" href="#">
+<span class="material-symbols-outlined">groups</span>
+</a>
+</div>
+</div>
+</footer>
+</body></html>

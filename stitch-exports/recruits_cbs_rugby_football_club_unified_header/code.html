@@ -1,0 +1,305 @@
+<!DOCTYPE html>
+
+<html lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&amp;family=Barlow+Condensed:wght@400;600;700&amp;family=Space+Grotesk:wght@400;500;700&amp;family=DM+Sans:wght@400;500;700&amp;family=Manrope:wght@400;500;600&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    colors: {
+                        "on-surface-variant": "#42474f",
+                        "on-primary-container": "#7ba2d5",
+                        "surface-tint": "#376090",
+                        "surface-dim": "#dcd9d9",
+                        "error-container": "#ffdad6",
+                        "tertiary-fixed": "#ffe08f",
+                        "surface-container-lowest": "#ffffff",
+                        "outline": "#737780",
+                        "error": "#ba1a1a",
+                        "on-primary-fixed-variant": "#1b4876",
+                        "primary-container": "#003865",
+                        "secondary": "#1d648b",
+                        "primary": "#002241",
+                        "on-primary-fixed": "#001c37",
+                        "on-secondary-container": "#0e5c82",
+                        "on-secondary": "#ffffff",
+                        "outline-variant": "#c2c6d0",
+                        "secondary-fixed-dim": "#90cdfa",
+                        "tertiary-fixed-dim": "#e6c364",
+                        "surface-container-low": "#f6f3f2",
+                        "on-tertiary-fixed-variant": "#584400",
+                        "secondary-fixed": "#c9e6ff",
+                        "primary-fixed": "#d2e4ff",
+                        "on-error": "#ffffff",
+                        "on-secondary-fixed": "#001e2f",
+                        "secondary-container": "#97d3ff",
+                        "on-tertiary-fixed": "#241a00",
+                        "primary-fixed-dim": "#a1c9ff",
+                        "tertiary-container": "#c9a84c",
+                        "inverse-primary": "#a1c9ff",
+                        "on-surface": "#1c1b1b",
+                        "surface-container": "#f0edec",
+                        "surface": "#fcf8f8",
+                        "surface-container-highest": "#e5e2e1",
+                        "on-tertiary": "#ffffff",
+                        "on-primary": "#ffffff",
+                        "on-error-container": "#93000a",
+                        "tertiary": "#755b00",
+                        "surface-container-high": "#ebe7e7",
+                        "surface-variant": "#e5e2e1",
+                        "surface-bright": "#fcf8f8",
+                        "background": "#fcf8f8",
+                        "inverse-on-surface": "#f3f0ef",
+                        "on-secondary-fixed-variant": "#004c6e",
+                        "on-tertiary-container": "#4f3d00",
+                        "inverse-surface": "#313030",
+                        "on-background": "#1c1b1b"
+                    },
+                    fontFamily: {
+                        "headline": ["Barlow Condensed"],
+                        "display": ["Bebas Neue"],
+                        "body": ["DM Sans"],
+                        "label": ["Manrope"]
+                    },
+                    borderRadius: {"DEFAULT": "0px", "lg": "0px", "xl": "0px", "full": "9999px"},
+                },
+            },
+        }
+    </script>
+<style>
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+        }
+        body { font-family: 'DM Sans', sans-serif; }
+        .bebas { font-family: 'Bebas Neue', cursive; }
+        .barlow { font-family: 'Barlow Condensed', sans-serif; }
+    </style>
+</head>
+<body class="bg-surface text-on-surface">
+<!-- TopNavBar -->
+<nav class="fixed top-0 w-full flex justify-between items-center px-8 py-4 z-50 bg-[#002241] dark:bg-[#0A0A0A]">
+<div class="text-2xl font-bold tracking-tighter text-[#FCF8F8] uppercase bebas">CBS RFC</div>
+<div class="hidden md:flex items-center gap-8">
+<a class="text-[#FCF8F8] hover:text-[#C9A84C] transition-colors duration-200 barlow text-lg tracking-wide" href="#">HOME</a>
+<a class="text-[#FCF8F8] hover:text-[#C9A84C] transition-colors duration-200 barlow text-lg tracking-wide" href="#">ABOUT</a>
+<a class="text-[#FCF8F8] hover:text-[#C9A84C] transition-colors duration-200 barlow text-lg tracking-wide" href="#">EVENTS</a>
+<a class="text-[#FCF8F8] hover:text-[#C9A84C] transition-colors duration-200 barlow text-lg tracking-wide" href="#">ALUMNI</a>
+<a class="text-[#C9A84C] border-b-2 border-[#C9A84C] pb-1 font-bold barlow text-lg tracking-wide" href="#">RECRUITS</a>
+<a class="text-[#FCF8F8] hover:text-[#C9A84C] transition-colors duration-200 barlow text-lg tracking-wide" href="#">SPONSORS</a>
+<a class="text-[#FCF8F8] hover:text-[#C9A84C] transition-colors duration-200 barlow text-lg tracking-wide" href="#">MEDIA</a>
+<a class="text-[#FCF8F8] hover:text-[#C9A84C] transition-colors duration-200 barlow text-lg tracking-wide" href="#">RWC 2026</a>
+</div>
+<button class="bg-tertiary-container text-on-tertiary-container px-6 py-2 bebas text-xl tracking-wider hover:scale-105 active:scale-95 transition-all duration-150">
+            JOIN THE CLUB
+        </button>
+</nav>
+<!-- Hero Section -->
+<section class="relative h-[665px] w-full bg-primary overflow-hidden flex items-center pt-16">
+<div class="absolute inset-0 opacity-40">
+<img alt="Rugby team huddle on pitch" class="w-full h-full object-cover" data-alt="Athletic rugby players in a dynamic huddle on field" src="https://lh3.googleusercontent.com/aida-public/AB6AXuC1vKXDcex4-q9IldCVLRm74LGSCtiM9XUSLAekckeqTZCT2mHAvnWDz6FPvY3GczhgSUbiH36wczGOw8MYSdITljlzRBbgjZvGmyV1zKlLEexEI6S-xCMdZEsR09QbXn_fay3tAJJGQwofRnv6pgXeZXLX4UejtWz4riS1S8KHKXZPV3JcYibNayjhmhEeZHjJ6xpOusMlaCqZJJHHh3Yycm4ekz5gKSKxrrTmFmgLS9AqEJAHpWIoGHSPe-H9aK7w57YjVe8dpJE"/>
+<div class="absolute inset-0 bg-gradient-to-r from-primary via-primary/60 to-transparent"></div>
+</div>
+<div class="relative z-10 px-8 md:px-24">
+<h1 class="text-7xl md:text-9xl text-surface bebas leading-[0.85] tracking-tighter">
+                RUN WITH <br/><span class="text-tertiary-container">US.</span>
+</h1>
+<p class="barlow text-xl md:text-2xl text-surface-container-highest mt-6 max-w-xl uppercase tracking-widest font-semibold">
+                Build a legacy. Forge a brotherhood. Represent Columbia Business School on the pitch.
+            </p>
+</div>
+</section>
+<!-- WHY JOIN Section -->
+<section class="py-24 px-8 md:px-24 bg-surface">
+<div class="mb-16">
+<h2 class="bebas text-5xl text-primary tracking-tight">WHY JOIN?</h2>
+<div class="w-16 h-1 bg-tertiary-container mt-2"></div>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-4 gap-0">
+<div class="p-8 border-l border-primary/10 bg-surface-container-low hover:bg-primary group transition-all duration-300">
+<span class="material-symbols-outlined text-4xl text-tertiary-container group-hover:text-surface mb-6">group</span>
+<h3 class="bebas text-2xl text-primary group-hover:text-surface mb-4">FRIENDS</h3>
+<p class="text-on-surface-variant group-hover:text-surface/80">Immediate access to a network of 60+ active players and hundreds of alumni worldwide.</p>
+</div>
+<div class="p-8 border-l border-primary/10 bg-surface hover:bg-primary group transition-all duration-300">
+<span class="material-symbols-outlined text-4xl text-tertiary-container group-hover:text-surface mb-6">workspace_premium</span>
+<h3 class="bebas text-2xl text-primary group-hover:text-surface mb-4">COMPETE</h3>
+<p class="text-on-surface-variant group-hover:text-surface/80">Play against top MBA programs and local clubs in high-stakes matches and international tours.</p>
+</div>
+<div class="p-8 border-l border-primary/10 bg-surface-container-low hover:bg-primary group transition-all duration-300">
+<span class="material-symbols-outlined text-4xl text-tertiary-container group-hover:text-surface mb-6">history_edu</span>
+<h3 class="bebas text-2xl text-primary group-hover:text-surface mb-4">TRADITION</h3>
+<p class="text-on-surface-variant group-hover:text-surface/80">Become part of one of the most storied athletic organizations at Columbia University.</p>
+</div>
+<div class="p-8 border-l border-r border-primary/10 bg-surface hover:bg-primary group transition-all duration-300">
+<span class="material-symbols-outlined text-4xl text-tertiary-container group-hover:text-surface mb-6">handshake</span>
+<h3 class="bebas text-2xl text-primary group-hover:text-surface mb-4">WELCOME</h3>
+<p class="text-on-surface-variant group-hover:text-surface/80">Zero experience required. We teach you everything from your first tackle to elite strategy.</p>
+</div>
+</div>
+</section>
+<!-- WHAT TO EXPECT Section (Visual Stepper) -->
+<section class="py-24 bg-primary text-surface overflow-hidden">
+<div class="px-8 md:px-24 mb-16">
+<h2 class="bebas text-5xl tracking-tight">WHAT TO EXPECT</h2>
+<p class="barlow text-tertiary-container text-lg tracking-widest uppercase">The Road to the First XV</p>
+</div>
+<div class="flex flex-col md:flex-row w-full">
+<div class="flex-1 border-t md:border-t-0 md:border-l border-surface/20 p-12 relative">
+<div class="text-6xl bebas text-tertiary-container/30 absolute top-4 right-8">01</div>
+<h4 class="bebas text-3xl mb-4">ORIENTATION</h4>
+<p class="barlow text-lg text-surface/70 leading-relaxed uppercase tracking-wide">Meet the leadership, learn the rules of the game, and get your first touch of the ball.</p>
+</div>
+<div class="flex-1 border-t md:border-t-0 md:border-l border-surface/20 p-12 relative">
+<div class="text-6xl bebas text-tertiary-container/30 absolute top-4 right-8">02</div>
+<h4 class="bebas text-3xl mb-4">BOOTCAMP</h4>
+<p class="barlow text-lg text-surface/70 leading-relaxed uppercase tracking-wide">Intensive skill sessions focusing on tackling safety, passing mechanics, and fitness.</p>
+</div>
+<div class="flex-1 border-t md:border-t-0 md:border-l border-surface/20 p-12 relative bg-primary-container">
+<div class="text-6xl bebas text-tertiary-container absolute top-4 right-8">03</div>
+<h4 class="bebas text-3xl mb-4">THE ROOKIE GAME</h4>
+<p class="barlow text-lg text-surface/70 leading-relaxed uppercase tracking-wide">Put your training to the test in a dedicated match for first-year players only.</p>
+</div>
+<div class="flex-1 border-t md:border-t-0 md:border-l border-r border-surface/20 p-12 relative">
+<div class="text-6xl bebas text-tertiary-container/30 absolute top-4 right-8">04</div>
+<h4 class="bebas text-3xl mb-4">FULL TOUR</h4>
+<p class="barlow text-lg text-surface/70 leading-relaxed uppercase tracking-wide">Join the squad for domestic away games and international rugby tours.</p>
+</div>
+</div>
+</section>
+<!-- PRACTICE INFO -->
+<section class="py-24 px-8 md:px-24 bg-surface-container-low flex flex-col md:flex-row gap-16 items-center">
+<div class="md:w-1/2">
+<img alt="Rugby practice field" class="w-full aspect-video object-cover grayscale brightness-75 border-8 border-surface" data-alt="Empty green rugby pitch with goal posts at sunset" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDRZORILyl8dYiJjgLzOZrnGbqiEPMAXfmxzdoWSN9J6AvJ3SVpoW-5JbDdSw8_g_RE1fUSY4eNAWoeZirEigH2Zz-xklmgnXc0yOHsVyk5w4z3z_RjSX84Ab3a0SJfcqBrXOQT46aok_3sPZvpSX6S5NJNN1DlP00DUCZu8G2E-_70xZaJX1pBOuMVFafE2uAlcrVWY0lslqX_fHRXwauwYVYMz0GBFJVX966IX0C4UJkGMWy8lXl4BHl_S-CI2GgmAUtjT_DNfrw"/>
+</div>
+<div class="md:w-1/2">
+<h2 class="bebas text-5xl text-primary mb-6">PRACTICE INFO</h2>
+<div class="space-y-6 mb-10">
+<div class="flex gap-4 items-start">
+<span class="material-symbols-outlined text-tertiary">calendar_today</span>
+<div>
+<p class="barlow font-bold text-primary uppercase text-lg">TUESDAYS &amp; THURSDAYS</p>
+<p class="text-on-surface-variant">7:00 PM - 9:00 PM</p>
+</div>
+</div>
+<div class="flex gap-4 items-start">
+<span class="material-symbols-outlined text-tertiary">location_on</span>
+<div>
+<p class="barlow font-bold text-primary uppercase text-lg">COLUMBIA BAKER FIELD</p>
+<p class="text-on-surface-variant">533 W 218th St, New York, NY</p>
+</div>
+</div>
+</div>
+<button class="bg-primary text-surface px-8 py-4 bebas text-xl tracking-widest flex items-center gap-3 hover:bg-primary-container transition-colors">
+<span class="material-symbols-outlined">event_available</span>
+                ADD TO CALENDAR
+            </button>
+</div>
+</section>
+<!-- PLAYER QUOTES -->
+<section class="py-24 px-8 md:px-24 bg-surface overflow-hidden">
+<div class="text-center mb-16">
+<h2 class="bebas text-5xl text-primary">VOICES FROM THE PACK</h2>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+<!-- Quote 1 -->
+<div class="bg-surface-container-highest p-10 relative">
+<span class="material-symbols-outlined text-tertiary-container text-6xl absolute -top-4 -left-2 opacity-30" style="font-variation-settings: 'FILL' 1;">format_quote</span>
+<p class="barlow text-xl italic text-primary leading-snug mb-8 relative z-10">"I joined with zero rugby knowledge. Two years later, these guys are my closest friends and I've played matches in three different countries."</p>
+<div class="flex items-center gap-4">
+<div class="w-12 h-12 bg-primary"></div>
+<div>
+<p class="bebas text-lg leading-none">JAMES MACAVOY</p>
+<p class="barlow text-sm uppercase font-bold text-on-surface-variant">CLASS OF '25 • FLANKER</p>
+</div>
+</div>
+</div>
+<!-- Quote 2 -->
+<div class="bg-primary text-surface p-10 relative">
+<span class="material-symbols-outlined text-tertiary-container text-6xl absolute -top-4 -left-2 opacity-30" style="font-variation-settings: 'FILL' 1;">format_quote</span>
+<p class="barlow text-xl italic leading-snug mb-8 relative z-10">"The best stress relief for an MBA candidate. Nothing clears your head like a Thursday night session at Baker Field."</p>
+<div class="flex items-center gap-4">
+<div class="w-12 h-12 bg-tertiary-container"></div>
+<div>
+<p class="bebas text-lg leading-none text-surface">SARAH CHEN</p>
+<p class="barlow text-sm uppercase font-bold text-surface/70">CLASS OF '24 • SCRUM HALF</p>
+</div>
+</div>
+</div>
+<!-- Quote 3 -->
+<div class="bg-surface-container-highest p-10 relative">
+<span class="material-symbols-outlined text-tertiary-container text-6xl absolute -top-4 -left-2 opacity-30" style="font-variation-settings: 'FILL' 1;">format_quote</span>
+<p class="barlow text-xl italic text-primary leading-snug mb-8 relative z-10">"Alumni engagement is real. My first internship came from a conversation with an RFC grad at a post-match social."</p>
+<div class="flex items-center gap-4">
+<div class="w-12 h-12 bg-primary"></div>
+<div>
+<p class="bebas text-lg leading-none">MARCUS THORNE</p>
+<p class="barlow text-sm uppercase font-bold text-on-surface-variant">CLASS OF '23 • PROP</p>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- JOIN THE PACK FORM -->
+<section class="py-24 bg-primary flex justify-center px-8">
+<div class="max-w-4xl w-full grid grid-cols-1 md:grid-cols-2 bg-surface">
+<div class="p-12 bg-primary-container text-surface flex flex-col justify-center">
+<h2 class="bebas text-6xl leading-[0.9] mb-6">JOIN THE <br/><span class="text-tertiary-container">PACK.</span></h2>
+<p class="barlow text-lg uppercase tracking-wider opacity-80">Submit your details and our recruiting chair will reach out within 24 hours.</p>
+</div>
+<div class="p-12">
+<form class="space-y-6">
+<div>
+<label class="barlow font-bold text-primary uppercase text-sm block mb-1">FULL NAME</label>
+<input class="w-full border-none bg-surface-container-low focus:ring-2 focus:ring-secondary py-3 px-4" placeholder="First Last" type="text"/>
+</div>
+<div>
+<label class="barlow font-bold text-primary uppercase text-sm block mb-1">EMAIL ADDRESS</label>
+<input class="w-full border-none bg-surface-container-low focus:ring-2 focus:ring-secondary py-3 px-4" placeholder="name@columbia.edu" type="email"/>
+</div>
+<div class="grid grid-cols-2 gap-4">
+<div>
+<label class="barlow font-bold text-primary uppercase text-sm block mb-1">GRAD YEAR</label>
+<select class="w-full border-none bg-surface-container-low focus:ring-2 focus:ring-secondary py-3 px-4">
+<option>2025</option>
+<option>2026</option>
+<option>Exchange</option>
+</select>
+</div>
+<div>
+<label class="barlow font-bold text-primary uppercase text-sm block mb-1">RUGBY EXP.</label>
+<select class="w-full border-none bg-surface-container-low focus:ring-2 focus:ring-secondary py-3 px-4">
+<option>None / Beginner</option>
+<option>College Player</option>
+<option>Elite / Club</option>
+</select>
+</div>
+</div>
+<button class="w-full bg-tertiary-container text-on-tertiary-container py-4 bebas text-2xl tracking-widest hover:brightness-110 transition-all" type="submit">
+                        SUBMIT INTEREST
+                    </button>
+</form>
+</div>
+</div>
+</section>
+<!-- Footer -->
+<footer class="bg-[#002241] dark:bg-[#0A0A0A] py-12 px-8 border-t border-[#003865] dark:border-[#1A1A1A]">
+<div class="w-full flex flex-col md:flex-row justify-between items-center gap-6">
+<div class="font-['Bebas_Neue'] text-xl text-[#FCF8F8]">CBS RUGBY FOOTBALL CLUB</div>
+<div class="flex flex-wrap justify-center gap-8">
+<a class="font-['Space_Grotesk'] text-sm uppercase tracking-widest text-[#E5E2E1] hover:text-[#C9A84C] transition-colors" href="#">Privacy Policy</a>
+<a class="font-['Space_Grotesk'] text-sm uppercase tracking-widest text-[#E5E2E1] hover:text-[#C9A84C] transition-colors" href="#">Terms of Service</a>
+<a class="font-['Space_Grotesk'] text-sm uppercase tracking-widest text-[#E5E2E1] hover:text-[#C9A84C] transition-colors" href="#">Contact Us</a>
+<a class="font-['Space_Grotesk'] text-sm uppercase tracking-widest text-[#E5E2E1] hover:text-[#C9A84C] transition-colors" href="#">Support</a>
+</div>
+<div class="font-['Space_Grotesk'] text-xs uppercase tracking-widest text-[#E5E2E1] opacity-60">
+                © 2024 CBS RUGBY FOOTBALL CLUB. ALL RIGHTS RESERVED.
+            </div>
+</div>
+</footer>
+</body></html>

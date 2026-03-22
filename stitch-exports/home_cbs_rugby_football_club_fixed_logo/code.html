@@ -1,0 +1,348 @@
+<!DOCTYPE html>
+
+<html class="light" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>CBS RFC | Columbia Business School Rugby Football Club</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&amp;family=Barlow+Condensed:wght@400;600;700&amp;family=Manrope:wght@400;500;700&amp;family=Space+Grotesk:wght@500;700&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    colors: {
+                        "tertiary-fixed": "#ffe08f",
+                        "surface-container-lowest": "#ffffff",
+                        "on-error": "#ffffff",
+                        "on-secondary-container": "#0e5c82",
+                        "on-tertiary-fixed": "#241a00",
+                        "surface-tint": "#376090",
+                        "primary-container": "#003865",
+                        "on-primary-fixed": "#001c37",
+                        "primary": "#002241",
+                        "surface-bright": "#fcf8f8",
+                        "tertiary-fixed-dim": "#e6c364",
+                        "on-secondary-fixed": "#001e2f",
+                        "on-primary-container": "#7ba2d5",
+                        "surface-container-low": "#f6f3f2",
+                        "background": "#fcf8f8",
+                        "on-primary": "#ffffff",
+                        "on-error-container": "#93000a",
+                        "tertiary-container": "#C9A84C",
+                        "inverse-on-surface": "#f3f0ef",
+                        "primary-fixed": "#d2e4ff",
+                        "secondary": "#1d648b",
+                        "secondary-container": "#97d3ff",
+                        "outline-variant": "#c2c6d0",
+                        "surface": "#fcf8f8",
+                        "inverse-surface": "#313030",
+                        "secondary-fixed": "#c9e6ff",
+                        "surface-variant": "#e5e2e1",
+                        "inverse-primary": "#a1c9ff",
+                        "primary-fixed-dim": "#a1c9ff",
+                        "on-primary-fixed-variant": "#1b4876",
+                        "outline": "#737780",
+                        "error-container": "#ffdad6",
+                        "surface-container-highest": "#e5e2e1",
+                        "on-surface-variant": "#42474f",
+                        "on-tertiary": "#ffffff",
+                        "on-tertiary-container": "#4f3d00",
+                        "error": "#ba1a1a",
+                        "surface-dim": "#dcd9d9",
+                        "on-secondary-fixed-variant": "#004c6e",
+                        "on-background": "#1c1b1b",
+                        "on-secondary": "#ffffff",
+                        "secondary-fixed-dim": "#90cdfa",
+                        "surface-container": "#f0edec",
+                        "on-tertiary-fixed-variant": "#584400",
+                        "on-surface": "#1c1b1b",
+                        "tertiary": "#755b00",
+                        "surface-container-high": "#ebe7e7"
+                    },
+                    fontFamily: {
+                        "bebas-neue": ["Bebas Neue", "sans-serif"],
+                        "barlow-condensed": ["Barlow Condensed", "sans-serif"],
+                        "manrope": ["Manrope", "sans-serif"],
+                        "headline": ["Space Grotesk", "sans-serif"],
+                        "body": ["Manrope", "sans-serif"],
+                        "label": ["Manrope", "sans-serif"]
+                    },
+                    borderRadius: {
+                        "DEFAULT": "0px",
+                        "lg": "0px",
+                        "xl": "0px",
+                        "full": "9999px"
+                    },
+                },
+            },
+        }
+    </script>
+</head>
+<body class="bg-surface text-on-surface selection:bg-tertiary-container selection:text-on-tertiary-container overflow-x-hidden">
+<!-- TopNavBar -->
+<nav class="fixed top-0 w-full z-50 rounded-none bg-primary shadow-[0_20px_40px_rgba(0,34,65,0.08)]">
+<div class="flex justify-between items-center w-full px-8 py-3 max-w-full">
+<div class="flex items-center">
+<img alt="CBS RFC Logo" class="h-12 w-auto object-contain" src="https://lh3.googleusercontent.com/aida/ADBb0uhk16CYu2UxNeY9P54WgylWN48PVI37nHS-MwDijQXZeUQdAs-Jvqj__pMHJAFxwurHzFj66Q66Q1oljzoVaK0b4YIKEOh14Z8zKEBVgFpZU53NNEuhWDtOXNaciZz6-Wd_QRdJkyb5yg5jVwt1ldFLZOg3BN2doAUGiMaPMxTHH5VZQEG5I8becVLRokPYTQNcPhsmkBajO9R8Jutpht3TVoi6mXkyAUanSuaBtB1RHxXlTnjoIor3K4JMuJToet8EXALsySY0NA"/>
+</div>
+<div class="hidden md:flex items-center gap-8">
+<a class="font-barlow-condensed font-semibold uppercase tracking-wider text-sm text-tertiary-container border-b-2 border-tertiary-container pb-1 transition-transform duration-200 hover:-translate-y-0.5" href="#">HOME</a>
+<a class="font-barlow-condensed font-semibold uppercase tracking-wider text-sm text-white hover:text-tertiary-container transition-transform duration-200 hover:-translate-y-0.5" href="#">ABOUT</a>
+<a class="font-barlow-condensed font-semibold uppercase tracking-wider text-sm text-white hover:text-tertiary-container transition-transform duration-200 hover:-translate-y-0.5" href="#">EVENTS</a>
+<a class="font-barlow-condensed font-semibold uppercase tracking-wider text-sm text-white hover:text-tertiary-container transition-transform duration-200 hover:-translate-y-0.5" href="#">ALUMNI</a>
+<a class="font-barlow-condensed font-semibold uppercase tracking-wider text-sm text-white hover:text-tertiary-container transition-transform duration-200 hover:-translate-y-0.5" href="#">RECRUITS</a>
+<a class="font-barlow-condensed font-semibold uppercase tracking-wider text-sm text-white hover:text-tertiary-container transition-transform duration-200 hover:-translate-y-0.5" href="#">SPONSORS</a>
+<a class="font-barlow-condensed font-semibold uppercase tracking-wider text-sm text-white hover:text-tertiary-container transition-transform duration-200 hover:-translate-y-0.5" href="#">MEDIA</a>
+<a class="font-barlow-condensed font-semibold uppercase tracking-wider text-sm text-white hover:text-tertiary-container transition-transform duration-200 hover:-translate-y-0.5" href="#">RWC 2026</a>
+</div>
+<button class="bg-tertiary-container text-primary px-6 py-2.5 font-barlow-condensed font-bold uppercase tracking-widest text-sm hover:scale-95 duration-150 ease-in-out">
+            JOIN THE CLUB
+        </button>
+</div>
+</nav>
+<!-- Section 1: Hero -->
+<section class="relative h-screen w-full flex items-center overflow-hidden bg-[#0A0A0A]">
+<div class="absolute inset-0 z-0">
+<img class="w-full h-full object-cover opacity-45 grayscale-[20%]" data-alt="Intense rugby match action with players in motion" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCYbq5H8RnoyLLo34qeJuGHNxY88XZSoZI5KDSJU-_XGUKd5-tjk7G45Km5H3t159vRcuuhnK7SmpnU-fSkUj0gMcJFtQs-00i8sUTZiPCN2Rq_fvWrIfJes2IdcenEaY9MPgIGTcz39eSoJXTQO-1tofVhyawVVXZTys3_1_OkwpAY0dF3BmPNBTk0gvGKHJw7lXW3xI4-J0VQQBQeIovdxE9t8tCp6xOdueY4jolZpGuYiXhQAxegtnji7D6Kp-04k_JiqVM1ViI"/>
+<div class="absolute inset-0 bg-gradient-to-r from-[#0A0A0A] via-[#0A0A0A]/60 to-transparent"></div>
+</div>
+<div class="relative z-10 px-8 md:px-20 max-w-5xl">
+<p class="text-tertiary-container font-barlow-condensed font-bold uppercase tracking-[0.3em] mb-4">THE OLDEST CLUB AT CBS</p>
+<h1 class="text-white font-bebas-neue text-6xl md:text-9xl leading-[0.9] tracking-tighter mb-6">
+            COLUMBIA BUSINESS SCHOOL<br/>RUGBY FC
+        </h1>
+<p class="text-white/85 font-manrope text-lg md:text-xl max-w-[540px] leading-relaxed mb-10">
+            Building tradition, teamwork, and community on and off the pitch since 1968.
+        </p>
+<div class="flex flex-wrap gap-4">
+<button class="bg-tertiary-container text-primary px-10 py-4 font-barlow-condensed font-bold uppercase tracking-widest text-lg hover:translate-y-[-2px] transition-all shadow-xl">
+                JOIN THE CLUB
+            </button>
+<button class="border-2 border-white text-white px-10 py-4 font-barlow-condensed font-bold uppercase tracking-widest text-lg hover:bg-white hover:text-primary transition-all">
+                OUR STORY
+            </button>
+</div>
+</div>
+<div class="absolute bottom-10 left-1/2 -translate-x-1/2 text-white/50 animate-bounce">
+<span class="material-symbols-outlined text-4xl">expand_more</span>
+</div>
+</section>
+<!-- Section 2: Stats Bar -->
+<section class="bg-primary py-8 px-8 overflow-hidden">
+<div class="max-w-7xl mx-auto flex flex-wrap justify-center md:justify-between items-center gap-8 md:gap-4">
+<div class="flex flex-col md:flex-row items-center gap-2">
+<span class="font-bebas-neue text-4xl text-tertiary-container">EST. 1968</span>
+<span class="hidden md:block w-px h-8 bg-white/20 mx-4"></span>
+</div>
+<div class="flex flex-col md:flex-row items-center gap-2">
+<span class="font-bebas-neue text-4xl text-tertiary-container">55+</span>
+<span class="font-barlow-condensed text-white uppercase tracking-widest font-semibold">Years of Tradition</span>
+<span class="hidden md:block w-px h-8 bg-white/20 mx-4"></span>
+</div>
+<div class="flex flex-col md:flex-row items-center gap-2">
+<span class="font-bebas-neue text-4xl text-tertiary-container">100+</span>
+<span class="font-barlow-condensed text-white uppercase tracking-widest font-semibold">Members</span>
+<span class="hidden md:block w-px h-8 bg-white/20 mx-4"></span>
+</div>
+<div class="flex flex-col md:flex-row items-center gap-2">
+<span class="font-bebas-neue text-4xl text-tertiary-container">NYC BASED</span>
+</div>
+</div>
+</section>
+<!-- Section 3: RWC 2026 Feature -->
+<section class="bg-[#050505] py-24 relative overflow-hidden">
+<div class="absolute top-0 right-0 w-1/2 h-full opacity-10 pointer-events-none">
+<img class="w-full h-full object-cover" data-alt="Abstract rugby ball texture macro" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAkAmSn_R7UQlf0lLFyN2sOTrJpxsynVZs4kJLmeh3P6EHE-ua3ovNbxRCuz91LKUM5ne5rW8j__mXKubZe2-KjDDe-6rSsrLhvbrdVY09OFXfFftd1-7dzRn5dnV8_k_GoE2kWlOyihUUeQIoEn4qA7qTffbYjiJ_ttlFk0d0DtzQjotylfjy6kqt69wykq0P9PqYctw7n3j63Yj3pE1Sx6mKDmQ2M6zsJ5XByBJGYV51HOmHeQrKPgIAO4v9HAwwJGPBtidEfmxM"/>
+</div>
+<div class="max-w-7xl mx-auto px-8 relative z-10 flex flex-col md:flex-row items-end justify-between gap-12">
+<div class="flex flex-col">
+<h2 class="font-bebas-neue text-[10vw] md:text-8xl leading-none text-white tracking-tighter">
+                MBA RUGBY /<br/>
+                WORLD CUP /<br/>
+<span class="text-tertiary-container">2026</span>
+</h2>
+<div class="mt-8 flex flex-wrap gap-8 font-barlow-condensed text-white/70 uppercase tracking-[0.2em] text-lg">
+<span class="text-white">April 25, 2026</span>
+<span class="text-tertiary-container">•</span>
+<span class="text-white">Governor's Island, NYC</span>
+<span class="text-tertiary-container">•</span>
+<span class="text-white">14 Teams. 1 Champion.</span>
+</div>
+</div>
+<div class="pb-4">
+<button class="border-2 border-tertiary-container text-tertiary-container px-12 py-5 font-barlow-condensed font-bold uppercase tracking-widest text-xl hover:bg-tertiary-container hover:text-primary transition-all group">
+                EVENT DETAILS <span class="inline-block transition-transform group-hover:translate-x-2">→</span>
+</button>
+</div>
+</div>
+</section>
+<!-- Section 4: Who We Are -->
+<section class="py-24 px-8 bg-surface">
+<div class="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-20 items-center">
+<div class="relative">
+<div class="absolute -top-6 -left-6 w-32 h-32 bg-tertiary-container/10 z-0"></div>
+<img class="w-full aspect-[4/5] object-cover relative z-10 shadow-2xl" data-alt="Rugby team huddle and brotherhood" src="https://lh3.googleusercontent.com/aida-public/AB6AXuC7Y8Y3RJatbPXsNuMHTa6dd2nlRAjKkiBpSvLrVHL6FlJA9wcyn5pqGIa4R0TBTiCQ-JmDUPHjIWUW3Pej1h_7_9LvgYr5dx4fZcCSlko5bmKUeOravT6aQkX2fxJyvjtUY1H-YvyRhtvkTkX9NU1C7T6h_6z9rRW-gYikYM8HZjXPC-Ft3inU8Mc8EQceF5spUH8TQwOa3DDZfzTaWFwhMAiTEZjYJdmT4ML1P_CkreA3K4COT3rYKPoCTxpenB_-Ev0thNe6EXk"/>
+<div class="absolute -bottom-10 -right-10 hidden md:block w-2/3 h-1/2 border-8 border-primary/5 -z-10"></div>
+</div>
+<div class="flex flex-col gap-8">
+<h2 class="font-bebas-neue text-6xl md:text-7xl text-primary leading-tight">MORE THAN A TEAM.<br/>IT'S A TRADITION.</h2>
+<p class="font-manrope text-lg text-on-surface-variant leading-relaxed">
+                The CBS Rugby Football Club is the longest-standing athletic organization at Columbia Business School. We believe in the power of rugby to forge unbreakable bonds, develop resilience, and create a network of leaders who carry the spirit of the pitch into their global careers.
+            </p>
+<a class="font-barlow-condensed font-bold text-xl uppercase tracking-widest text-primary hover:text-tertiary-container flex items-center gap-2 group" href="#">
+                OUR FULL STORY <span class="transition-transform group-hover:translate-x-2">→</span>
+</a>
+</div>
+</div>
+</section>
+<!-- Section 5: Three Pillars -->
+<section class="py-24 px-8 bg-surface-container-low">
+<div class="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-3 gap-12">
+<!-- Pillar 1 -->
+<div class="flex flex-col gap-6 p-10 bg-surface border-b-4 border-primary">
+<span class="material-symbols-outlined text-5xl text-primary" data-icon="sports_rugby">sports_rugby</span>
+<h3 class="font-bebas-neue text-4xl text-primary tracking-tight">COMPETE</h3>
+<p class="font-manrope text-on-surface-variant leading-relaxed">
+                Test your limits against elite business school programs globally. From NYC local matches to the World Cup pitch.
+            </p>
+</div>
+<!-- Pillar 2 -->
+<div class="flex flex-col gap-6 p-10 bg-surface border-b-4 border-tertiary-container">
+<span class="material-symbols-outlined text-5xl text-tertiary-container" data-icon="groups">groups</span>
+<h3 class="font-bebas-neue text-4xl text-primary tracking-tight">CONNECT</h3>
+<p class="font-manrope text-on-surface-variant leading-relaxed">
+                Join a brotherhood and sisterhood that spans decades. Our social calendar is as rigorous as our training schedule.
+            </p>
+</div>
+<!-- Pillar 3 -->
+<div class="flex flex-col gap-6 p-10 bg-surface border-b-4 border-primary">
+<span class="material-symbols-outlined text-5xl text-primary" data-icon="leaderboard">leaderboard</span>
+<h3 class="font-bebas-neue text-4xl text-primary tracking-tight">LEAD</h3>
+<p class="font-manrope text-on-surface-variant leading-relaxed">
+                Take command on the field and in organization. CBS RFC members are known for their decisive leadership in the boardroom.
+            </p>
+</div>
+</div>
+</section>
+<!-- Section 6: Upcoming Events Preview -->
+<section class="py-24 px-8 bg-surface">
+<div class="max-w-7xl mx-auto">
+<div class="flex justify-between items-end mb-16">
+<h2 class="font-bebas-neue text-6xl text-primary">WHAT'S COMING UP</h2>
+<a class="hidden md:flex font-barlow-condensed font-bold text-xl uppercase tracking-widest text-primary hover:text-tertiary-container items-center gap-2 group" href="#">
+                VIEW ALL EVENTS <span class="transition-transform group-hover:translate-x-2">→</span>
+</a>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+<!-- Event 1 -->
+<div class="group cursor-pointer">
+<div class="relative overflow-hidden aspect-video mb-6">
+<img class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105" data-alt="Rugby game under stadium lights" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDzH36axapw6MH1yEBP08EusABjpyDRgeP9Ulvc3PxNkTJoplLWkHUrh8rn_2UgqcCW_PKU_Qww5PeTuJaxABzIyOsAAjl615lUHPdRCt9TvEtahdKo5rEsTaGAQ7XJGbmmXVSV5QH6-PUJgqi5NX7lpXQVVtmEqnzFfS2DrY6WBuLNKviZSqrguAwLuzXQkf7qBs0T9bWRJ75vU2mZ8H7srzKLDbiGFFQz_tKSQhLfo2QuKazdGIyxj7IXZ5qKqyoTz_lFvv7krzo"/>
+<div class="absolute top-4 left-4 bg-tertiary-container text-primary px-3 py-1 font-barlow-condensed font-bold text-sm tracking-widest uppercase">MATCH</div>
+</div>
+<p class="font-barlow-condensed font-bold text-primary tracking-[0.15em] mb-2 uppercase text-sm">OCT 14, 2024</p>
+<h4 class="font-barlow-condensed font-bold text-2xl text-primary mb-3 group-hover:text-tertiary-container transition-colors uppercase">CBS vs. Wharton: The Derby</h4>
+<p class="font-manrope text-on-surface-variant line-clamp-2">The biggest rivalry in business school rugby returns to Randall's Island for a showdown of titans.</p>
+</div>
+<!-- Event 2 -->
+<div class="group cursor-pointer">
+<div class="relative overflow-hidden aspect-video mb-6">
+<img class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105" data-alt="Team social gathering and dinner" src="https://lh3.googleusercontent.com/aida-public/AB6AXuChoszDlvKEjQRmE62ddINevXlRP4bpRGXCF48cILL99jmhMstdP6fls90joaB-ydBOJMqVKVEcXKMvVpsw-5nGLACssd5_p38SQCaxMjaybxJySY6OWgs8texhRCVVM95NWpPxhwTHaqIQuG2rn6LsLS_eMFOPhAtVsTuCbqTcmQeH6bcaqvf-r3Zs2bgu27umEEvh53_Luh-9hAHlhfKpK6oTq9VUbcs0okuKubnHxCUeSvnOdD8Gyz3LktdAZnFf2T5humRkql8"/>
+<div class="absolute top-4 left-4 bg-primary text-white px-3 py-1 font-barlow-condensed font-bold text-sm tracking-widest uppercase">SOCIAL</div>
+</div>
+<p class="font-barlow-condensed font-bold text-primary tracking-[0.15em] mb-2 uppercase text-sm">NOV 02, 2024</p>
+<h4 class="font-barlow-condensed font-bold text-2xl text-primary mb-3 group-hover:text-tertiary-container transition-colors uppercase">Annual Alumni Dinner</h4>
+<p class="font-manrope text-on-surface-variant line-clamp-2">An evening of networking and celebration at the Penn Club, honoring the class of 1994.</p>
+</div>
+<!-- Event 3 -->
+<div class="group cursor-pointer">
+<div class="relative overflow-hidden aspect-video mb-6">
+<img class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105" data-alt="Rugby training session on grass" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCDOJTaw8AhQSbMtvgX7zB2PECkgIRoZ2hj0v3PBHc90A2DyvZqCUS3ccasP9Tj5lUi3iTgka1UsoZt_XUn5FdSZz4Qb4VoMvid1MqJN6UODGXT88qwy9G9tV763kFpBUkEhIYfFYfH4XS6tIhzJZTQBtk-I8ZKRLVP98ugEDpHTYo6kBpmsTsBPBH3lvJWBq0B44gM2YNH0hSg0pEHRgGKq57X3GC6_tdrL5kkz0oI3_RcOxptjVma_dyKQ5GmIsIKIkO7GG__zjg"/>
+<div class="absolute top-4 left-4 bg-tertiary-container text-primary px-3 py-1 font-barlow-condensed font-bold text-sm tracking-widest uppercase">RECRUITING</div>
+</div>
+<p class="font-barlow-condensed font-bold text-primary tracking-[0.15em] mb-2 uppercase text-sm">AUG 28, 2024</p>
+<h4 class="font-barlow-condensed font-bold text-2xl text-primary mb-3 group-hover:text-tertiary-container transition-colors uppercase">Rookie Boot Camp</h4>
+<p class="font-manrope text-on-surface-variant line-clamp-2">Introduction to rugby for all incoming first-years. No experience necessary, just grit.</p>
+</div>
+</div>
+<div class="mt-12 md:hidden">
+<a class="font-barlow-condensed font-bold text-xl uppercase tracking-widest text-primary hover:text-tertiary-container flex items-center gap-2 group" href="#">
+                VIEW ALL EVENTS <span class="transition-transform group-hover:translate-x-2">→</span>
+</a>
+</div>
+</div>
+</section>
+<!-- Section 7: Alumni Teaser -->
+<section class="bg-primary py-24 px-8 relative overflow-hidden">
+<div class="max-w-5xl mx-auto text-center flex flex-col items-center gap-10">
+<h2 class="font-barlow-condensed italic font-bold text-4xl md:text-6xl text-white tracking-tight leading-tight">
+            "From the Pitch to the Boardroom."
+        </h2>
+<p class="font-manrope text-white/70 text-lg max-w-2xl">
+            Our network consists of over 1,500 active alumni who lead top institutions worldwide. The lessons learned in the scrum—trust, strategy, and perseverance—power their professional success every day.
+        </p>
+<button class="bg-transparent border-2 border-white text-white px-12 py-4 font-barlow-condensed font-bold uppercase tracking-widest text-xl hover:bg-white hover:text-primary transition-all">
+            EXPLORE ALUMNI
+        </button>
+</div>
+<div class="absolute top-0 left-0 w-32 h-full bg-tertiary-container opacity-5 -skew-x-12 -translate-x-16"></div>
+<div class="absolute bottom-0 right-0 w-32 h-full bg-tertiary-container opacity-5 -skew-x-12 translate-x-16"></div>
+</section>
+<!-- Section 8: Recruit CTA Banner -->
+<section class="bg-tertiary-container py-24 px-8">
+<div class="max-w-7xl mx-auto flex flex-col md:flex-row justify-between items-center gap-12 text-center md:text-left">
+<div>
+<h2 class="font-bebas-neue text-6xl md:text-8xl text-primary mb-4">READY TO JOIN THE LEGACY?</h2>
+<p class="font-barlow-condensed font-semibold text-primary uppercase tracking-[0.1em] text-xl">New students welcome. No prior rugby experience required.</p>
+</div>
+<button class="border-4 border-primary text-primary px-16 py-6 font-barlow-condensed font-bold uppercase tracking-widest text-2xl hover:bg-primary hover:text-white transition-all whitespace-nowrap">
+            GET INVOLVED
+        </button>
+</div>
+</section>
+<!-- Footer -->
+<footer class="bg-primary dark:bg-[#0A0A0A] w-full rounded-none">
+<div class="grid grid-cols-1 md:grid-cols-4 gap-12 px-12 py-20 w-full max-w-7xl mx-auto">
+<div class="flex flex-col gap-6">
+<div class="text-3xl font-bebas-neue text-white uppercase">CBS RFC</div>
+<p class="font-manrope text-white/70 leading-relaxed text-sm">
+                The heart of Columbia Business School athletics. Building leaders since 1968.
+            </p>
+</div>
+<div class="flex flex-col gap-4">
+<h5 class="font-bebas-neue text-white text-xl uppercase">The Club</h5>
+<nav class="flex flex-col gap-2">
+<a class="font-barlow-condensed uppercase tracking-[0.1em] text-white/60 hover:text-white transition-colors duration-300" href="#">HOME</a>
+<a class="font-barlow-condensed uppercase tracking-[0.1em] text-white/60 hover:text-white transition-colors duration-300" href="#">ABOUT</a>
+<a class="font-barlow-condensed uppercase tracking-[0.1em] text-white/60 hover:text-white transition-colors duration-300" href="#">EVENTS</a>
+<a class="font-barlow-condensed uppercase tracking-[0.1em] text-white/60 hover:text-white transition-colors duration-300" href="#">RECRUITS</a>
+</nav>
+</div>
+<div class="flex flex-col gap-4">
+<h5 class="font-bebas-neue text-white text-xl uppercase">Network</h5>
+<nav class="flex flex-col gap-2">
+<a class="font-barlow-condensed uppercase tracking-[0.1em] text-white/60 hover:text-white transition-colors duration-300" href="#">ALUMNI</a>
+<a class="font-barlow-condensed uppercase tracking-[0.1em] text-white/60 hover:text-white transition-colors duration-300" href="#">SPONSORS</a>
+<a class="font-barlow-condensed uppercase tracking-[0.1em] text-white/60 hover:text-white transition-colors duration-300" href="#">MEDIA</a>
+<a class="font-barlow-condensed uppercase tracking-[0.1em] text-white/60 hover:text-white transition-colors duration-300" href="#">CONTACT</a>
+</nav>
+</div>
+<div class="flex flex-col gap-4">
+<h5 class="font-bebas-neue text-white text-xl uppercase">Follow Us</h5>
+<nav class="flex flex-col gap-2">
+<a class="font-barlow-condensed uppercase tracking-[0.1em] text-white/60 hover:text-white transition-colors duration-300" href="#">INSTAGRAM</a>
+<a class="font-barlow-condensed uppercase tracking-[0.1em] text-white/60 hover:text-white transition-colors duration-300" href="#">FACEBOOK</a>
+<a class="font-barlow-condensed uppercase tracking-[0.1em] text-white/60 hover:text-white transition-colors duration-300" href="#">LINKEDIN</a>
+</nav>
+</div>
+</div>
+<div class="px-12 pb-12 w-full max-w-7xl mx-auto">
+<div class="w-full h-px bg-white/10 mb-8"></div>
+<p class="font-manrope text-white/40 text-xs text-center md:text-left">
+            © 1968-2024 CBS Rugby Football Club. Columbia Business School, NYC.
+        </p>
+</div>
+</footer>
+</body></html>

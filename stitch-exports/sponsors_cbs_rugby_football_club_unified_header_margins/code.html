@@ -1,0 +1,285 @@
+<!DOCTYPE html>
+
+<html lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&amp;family=Barlow+Condensed:wght@400;600;700&amp;family=Manrope:wght@400;500;700&amp;family=Space+Grotesk:wght@400;700&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+      tailwind.config = {
+        darkMode: "class",
+        theme: {
+          extend: {
+            colors: {
+              "outline": "#737780",
+              "on-error-container": "#93000a",
+              "on-error": "#ffffff",
+              "on-secondary-container": "#0e5c82",
+              "surface-bright": "#fcf8f8",
+              "on-primary": "#ffffff",
+              "inverse-on-surface": "#f3f0ef",
+              "surface-container-highest": "#e5e2e1",
+              "background": "#fcf8f8",
+              "secondary-fixed": "#c9e6ff",
+              "primary-fixed": "#d2e4ff",
+              "inverse-surface": "#313030",
+              "surface-tint": "#376090",
+              "tertiary": "#755b00",
+              "on-secondary-fixed": "#001e2f",
+              "on-tertiary-fixed": "#241a00",
+              "on-secondary": "#ffffff",
+              "surface": "#fcf8f8",
+              "primary": "#002241",
+              "error": "#ba1a1a",
+              "secondary-fixed-dim": "#90cdfa",
+              "on-secondary-fixed-variant": "#004c6e",
+              "tertiary-fixed": "#ffe08f",
+              "tertiary-container": "#C9A84C",
+              "on-primary-fixed-variant": "#1b4876",
+              "surface-container-high": "#ebe7e7",
+              "error-container": "#ffdad6",
+              "tertiary-fixed-dim": "#e6c364",
+              "on-tertiary": "#ffffff",
+              "surface-variant": "#e5e2e1",
+              "primary-fixed-dim": "#a1c9ff",
+              "on-primary-container": "#7ba2d5",
+              "inverse-primary": "#a1c9ff",
+              "secondary-container": "#97d3ff",
+              "on-tertiary-fixed-variant": "#584400",
+              "primary-container": "#003865",
+              "on-background": "#1c1b1b",
+              "surface-container": "#f0edec",
+              "on-surface-variant": "#42474f",
+              "secondary": "#1d648b",
+              "on-surface": "#1c1b1b",
+              "surface-container-lowest": "#ffffff",
+              "surface-dim": "#dcd9d9",
+              "on-tertiary-container": "#4f3d00",
+              "surface-container-low": "#f6f3f2",
+              "on-primary-fixed": "#001c37",
+              "outline-variant": "#c2c6d0"
+            },
+            fontFamily: {
+              "headline": ["Space Grotesk"],
+              "body": ["Manrope"],
+              "label": ["Manrope"],
+              "impact": ["Bebas Neue"],
+              "condensed": ["Barlow Condensed"],
+              "barlow-condensed": ["Barlow Condensed", "sans-serif"],
+              "manrope": ["Manrope", "sans-serif"],
+              "bebas-neue": ["Bebas Neue", "sans-serif"]
+            },
+            borderRadius: {"DEFAULT": "0px", "lg": "0px", "xl": "0px", "full": "9999px"},
+          },
+        },
+      }
+    </script>
+<style>
+      .material-symbols-outlined {
+        font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+      }
+      .no-line-philosophy { border: none !important; }
+      .logo-blend { mix-blend-mode: multiply; }
+    </style>
+</head>
+<body class="bg-surface text-on-surface font-body selection:bg-tertiary-container selection:text-on-tertiary-container overflow-x-hidden">
+<!-- TopNavBar (Identical to SCREEN_7) -->
+<nav class="fixed top-0 w-full z-50 rounded-none bg-primary shadow-[0_20px_40px_rgba(0,34,65,0.08)] no-line-philosophy">
+<div class="flex justify-between items-center w-full px-8 py-3 max-w-full">
+<div class="flex items-center">
+<img alt="CBS RFC Logo" class="h-12 w-auto object-contain logo-blend" src="https://lh3.googleusercontent.com/aida/ADBb0uhk16CYu2UxNeY9P54WgylWN48PVI37nHS-MwDijQXZeUQdAs-Jvqj__pMHJAFxwurHzFj66Q66Q1oljzoVaK0b4YIKEOh14Z8zKEBVgFpZU53NNEuhWDtOXNaciZz6-Wd_QRdJkyb5yg5jVwt1ldFLZOg3BN2doAUGiMaPMxTHH5VZQEG5I8becVLRokPYTQNcPhsmkBajO9R8Jutpht3TVoi6mXkyAUanSuaBtB1RHxXlTnjoIor3K4JMuJToet8EXALsySY0NA"/>
+</div>
+<div class="hidden md:flex items-center gap-8">
+<a class="font-barlow-condensed font-semibold uppercase tracking-wider text-sm text-white hover:text-tertiary-container transition-transform duration-200 hover:-translate-y-0.5" href="#">HOME</a>
+<a class="font-barlow-condensed font-semibold uppercase tracking-wider text-sm text-white hover:text-tertiary-container transition-transform duration-200 hover:-translate-y-0.5" href="#">ABOUT</a>
+<a class="font-barlow-condensed font-semibold uppercase tracking-wider text-sm text-white hover:text-tertiary-container transition-transform duration-200 hover:-translate-y-0.5" href="#">EVENTS</a>
+<a class="font-barlow-condensed font-semibold uppercase tracking-wider text-sm text-white hover:text-tertiary-container transition-transform duration-200 hover:-translate-y-0.5" href="#">ALUMNI</a>
+<a class="font-barlow-condensed font-semibold uppercase tracking-wider text-sm text-white hover:text-tertiary-container transition-transform duration-200 hover:-translate-y-0.5" href="#">RECRUITS</a>
+<a class="font-barlow-condensed font-semibold uppercase tracking-wider text-sm text-tertiary-container border-b-2 border-tertiary-container pb-1 transition-transform duration-200 hover:-translate-y-0.5" href="#">SPONSORS</a>
+<a class="font-barlow-condensed font-semibold uppercase tracking-wider text-sm text-white hover:text-tertiary-container transition-transform duration-200 hover:-translate-y-0.5" href="#">MEDIA</a>
+<a class="font-barlow-condensed font-semibold uppercase tracking-wider text-sm text-white hover:text-tertiary-container transition-transform duration-200 hover:-translate-y-0.5" href="#">RWC 2026</a>
+</div>
+<button class="bg-tertiary-container text-primary px-6 py-2.5 font-barlow-condensed font-bold uppercase tracking-widest text-sm hover:scale-95 duration-150 ease-in-out">
+                JOIN THE CLUB
+            </button>
+</div>
+</nav>
+<main class="pt-[72px]">
+<!-- Section 1: Narrow Page Hero -->
+<section class="relative bg-primary py-24 px-8 overflow-hidden">
+<div class="absolute inset-0 opacity-10 bg-[url('https://www.transparenttextures.com/patterns/carbon-fibre.png')]"></div>
+<div class="relative max-w-5xl mx-auto text-center">
+<h1 class="font-impact text-6xl md:text-8xl text-white tracking-tight leading-none mb-6">
+                    PARTNER WITH <span class="text-tertiary-container">CBS RFC</span>
+</h1>
+<p class="font-condensed text-xl md:text-2xl text-white/80 uppercase tracking-widest max-w-2xl mx-auto">
+                    Elevate your brand by connecting with an elite global network of business leaders and athletes.
+                </p>
+</div>
+</section>
+<!-- Section 2: Why Sponsor Us? -->
+<section class="py-24 px-8 bg-surface">
+<div class="max-w-7xl mx-auto">
+<div class="grid grid-cols-1 md:grid-cols-4 gap-12">
+<div class="group">
+<span class="material-symbols-outlined text-5xl text-primary mb-6 group-hover:text-tertiary-container transition-colors" data-icon="groups">groups</span>
+<h3 class="font-condensed font-bold text-2xl uppercase mb-4">Access an Elite MBA Network</h3>
+<p class="text-on-surface-variant leading-relaxed">Direct access to the next generation of global executives and influential alumni networks.</p>
+</div>
+<div class="group">
+<span class="material-symbols-outlined text-5xl text-primary mb-6 group-hover:text-tertiary-container transition-colors" data-icon="travel_explore">travel_explore</span>
+<h3 class="font-condensed font-bold text-2xl uppercase mb-4">Brand Visibility at the RWC</h3>
+<p class="text-on-surface-variant leading-relaxed">Strategic placement at the MBA Rugby World Cup, attracting thousands of international participants.</p>
+</div>
+<div class="group">
+<span class="material-symbols-outlined text-5xl text-primary mb-6 group-hover:text-tertiary-container transition-colors" data-icon="military_tech">military_tech</span>
+<h3 class="font-condensed font-bold text-2xl uppercase mb-4">Support Student Leadership</h3>
+<p class="text-on-surface-variant leading-relaxed">Enable peer-led athletic development, teamwork, and high-performance organizational culture.</p>
+</div>
+<div class="group">
+<span class="material-symbols-outlined text-5xl text-primary mb-6 group-hover:text-tertiary-container transition-colors" data-icon="history">history</span>
+<h3 class="font-condensed font-bold text-2xl uppercase mb-4">55 Years of Tradition</h3>
+<p class="text-on-surface-variant leading-relaxed">Align your brand with over half a century of heritage, excellence, and sporting integrity.</p>
+</div>
+</div>
+</div>
+</section>
+<!-- Section 3: MBA Rugby World Cup 2026 Partners -->
+<section class="py-24 px-8 bg-surface-container-low">
+<div class="max-w-7xl mx-auto">
+<div class="text-center mb-16">
+<h2 class="font-impact text-5xl uppercase tracking-tight text-primary">MBA RUGBY WORLD CUP 2026 PARTNERS</h2>
+<div class="h-1 w-24 bg-tertiary-container mx-auto mt-4"></div>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-2 gap-12">
+<!-- Partner Placeholder 1 -->
+<div class="bg-surface-container-lowest p-12 border-t-4 border-tertiary-container shadow-sm flex flex-col items-center text-center">
+<div class="w-full h-48 bg-surface-container-high flex items-center justify-center mb-8 border border-dashed border-outline-variant">
+<span class="font-condensed font-bold text-outline uppercase tracking-widest text-lg">Premier Partner Logo</span>
+</div>
+<h3 class="font-impact text-3xl mb-4 uppercase text-primary">TITLE TOURNAMENT PARTNER</h3>
+<p class="text-on-surface-variant leading-relaxed mb-8 max-w-md">
+                            As our flagship partner for the 2026 RWC, this organization gains unparalleled exposure to over 30 global MBA institutions. This partnership secures primary branding across all digital platforms, exclusive recruitment hospitality suites, and keynote presence during the opening ceremonies.
+                        </p>
+<div class="flex items-center gap-2 text-tertiary font-condensed font-bold uppercase tracking-widest">
+<span class="material-symbols-outlined" data-icon="visibility">visibility</span>
+<span>Global Visibility</span>
+</div>
+</div>
+<!-- Partner Placeholder 2 -->
+<div class="bg-surface-container-lowest p-12 border-t-4 border-primary shadow-sm flex flex-col items-center text-center">
+<div class="w-full h-48 bg-surface-container-high flex items-center justify-center mb-8 border border-dashed border-outline-variant">
+<span class="font-condensed font-bold text-outline uppercase tracking-widest text-lg">Impact Partner Logo</span>
+</div>
+<h3 class="font-impact text-3xl mb-4 uppercase text-primary">LEADERSHIP &amp; TALENT PARTNER</h3>
+<p class="text-on-surface-variant leading-relaxed mb-8 max-w-md">
+                            Focusing on the intersection of athletics and executive leadership, our Talent Partner connects directly with the tournament's high-performing participants. This role includes sponsorship of the 'Global Leaders' workshop series and integrated data-driven recruitment opportunities throughout the weekend.
+                        </p>
+<div class="flex items-center gap-2 text-tertiary font-condensed font-bold uppercase tracking-widest">
+<span class="material-symbols-outlined" data-icon="handshake">handshake</span>
+<span>Executive Impact</span>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Section 4: Current Partners -->
+<section class="py-24 px-8 bg-surface">
+<div class="max-w-7xl mx-auto">
+<h4 class="font-condensed font-bold text-center text-outline-variant uppercase tracking-[0.3em] mb-12">TRUSTED BY</h4>
+<div class="grid grid-cols-2 md:grid-cols-5 gap-16 items-center opacity-70">
+<div class="filter grayscale hover:grayscale-0 transition-all duration-500 cursor-pointer flex justify-center">
+<img alt="Corporate partner logo" class="h-12 w-auto object-contain" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCltM04DL5kNyVDM2aJAFLQkrB7LJ65sxKAlfLyTdpUWhbYVvXqWrGl7IZrmSawrNIi072w26GeY4bVOOfr6i7NaqCa0QzXZwDoUa2NoP6J_Fp8w8NZdyMSZf152aQToBFnu4qRuWE8hms_ZGAbA32D33L7q8u8O58AQP2emgHkQBWiVexgOWhn3F6Ht3eqS-YTZfgj9kcoAXufNZnBPssQSrZl3Ga9pmotU9BgzeFzbRsjjYX1vLePwnlKQ4h-XJ-H4d0a6iEinco"/>
+</div>
+<div class="filter grayscale hover:grayscale-0 transition-all duration-500 cursor-pointer flex justify-center">
+<img alt="Corporate partner logo" class="h-10 w-auto object-contain" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCpn7BfN3pBZ10PCUGkw9RuPVO-eHGirLo3bH4bVa1cyM9PSeggp-lmAQeLq2XbeV-QjEiO_q0_TZSbn4v2XNXBJllUfWysiIqtn5vZLaz-e6_nf5XMgS0G5soXe67uRQq0Rivz9QnR__HzWiEsqZ-jRQ8-5nXg55JfN_OQsZ3EwwKL57caWT3f9_NNNJQ9nJdarl1zPKjVhV6cSzlEwEr_xES6Od603wYAnplkAORXsxj_W1-45kxUTNprHAR-N6vJ2-D5EHWVxic"/>
+</div>
+<div class="filter grayscale hover:grayscale-0 transition-all duration-500 cursor-pointer flex justify-center">
+<img alt="Corporate partner logo" class="h-14 w-auto object-contain" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAKs9RMHRzRVWPUGKJtHnrj7R2WBIURpeecf4yrM-moG45Zd--oeFV7DX_As--c9-6A1evmovPKnXEbsh2u5bqlTWdOWa9swtXx6hu3GTmKO3VYNS2mtlvj4PdTJ5o6xWEel1yvGWbI-dCYvpXqxGtM0CI4ykdwxsWMPpxLxXowaLtvya-wKtPvj-IBB7IZsgmwRQe5kfdRWmOopuFrl3Kp_2soqLbVkbi70Pz6by1o4861tx9ngoUOWdrxqabAB6KGuG1AtlqkYB4"/>
+</div>
+<div class="filter grayscale hover:grayscale-0 transition-all duration-500 cursor-pointer flex justify-center">
+<img alt="Corporate partner logo" class="h-11 w-auto object-contain" src="https://lh3.googleusercontent.com/aida-public/AB6AXuA4K7XKx2JwcFg9v_jTe8rxd6BmgROOr7N08gU3-a6tk3-PqO9m3p8FBJ1Pc8c99wC-71WwAC2m14YYdS5KewV1iOOfSqm4naap0tjIFiPlzdqOAx4MfgIiyPCGcD8CwatJ18j76IzPO1J3dEORAL7MA1o_1JI5bazEmqWJ-4e4G3KBNrzg6w1qrepdWQgGsJD6oCWrGzU7vWEtTt1By1llzdbqD1onuoLxwSmctlVIGUvNgOwudZUavo3whaeUZgEhdOWgf_hIgfU"/>
+</div>
+<div class="filter grayscale hover:grayscale-0 transition-all duration-500 cursor-pointer flex justify-center">
+<img alt="Corporate partner logo" class="h-12 w-auto object-contain" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDYb1IeNrRB21DtTR_9Wsr7363GlxWgeJAnJr6iOkseMWQPSNB-69BR_HtZaCwdI_Sy5ebFD2B5Tf3VgAd_0HBRt4VaGw1G9ngCVDNkA0emK9sqVljIdVw2tvtmesGeyzV8o3jAeJaM3_dKRd1eDepA3GIx6M-oOmGOirAJX0clSZfhpN1BWCpf1qgrUrlhyyC41_PybTcSS4sG_dFN_yD2SA1U8CRzM4XnSsNHFrZUB_z0vzV-bsEULMb2NX00QNpu-9CrQzWnml4"/>
+</div>
+</div>
+</div>
+</section>
+<!-- Section 5: "Become a Partner" CTA -->
+<section class="bg-primary py-24 px-8">
+<div class="max-w-4xl mx-auto bg-surface-container-lowest/5 backdrop-blur-md p-12 border border-white/10">
+<div class="text-center mb-12">
+<h2 class="font-impact text-5xl text-white uppercase mb-4">START THE CONVERSATION</h2>
+<p class="text-white/60 font-condensed tracking-wide uppercase">Request our detailed 2026 World Cup Partnership Prospectus</p>
+</div>
+<form class="grid grid-cols-1 md:grid-cols-2 gap-6">
+<div class="col-span-1">
+<label class="block text-tertiary-container font-condensed font-bold text-sm mb-2 uppercase tracking-widest">Company Name</label>
+<input class="w-full bg-white/10 border-white/20 text-white focus:ring-tertiary-container focus:border-tertiary-container" type="text"/>
+</div>
+<div class="col-span-1">
+<label class="block text-tertiary-container font-condensed font-bold text-sm mb-2 uppercase tracking-widest">Work Email</label>
+<input class="w-full bg-white/10 border-white/20 text-white focus:ring-tertiary-container focus:border-tertiary-container" type="email"/>
+</div>
+<div class="col-span-2">
+<label class="block text-tertiary-container font-condensed font-bold text-sm mb-2 uppercase tracking-widest">Partnership Intent</label>
+<select class="w-full bg-white/10 border-white/20 text-white focus:ring-tertiary-container focus:border-tertiary-container">
+<option class="bg-primary">Select Interest...</option>
+<option class="bg-primary">Title Tournament Partner</option>
+<option class="bg-primary">Leadership &amp; Talent Partner</option>
+<option class="bg-primary">General Club Sponsorship</option>
+<option class="bg-primary">Custom Engagement</option>
+</select>
+</div>
+<div class="col-span-2 mt-4">
+<button class="w-full bg-tertiary-container text-on-tertiary-container font-impact text-2xl py-4 uppercase tracking-tighter hover:bg-white transition-colors duration-300" type="submit">
+                            SEND INQUIRY
+                        </button>
+</div>
+</form>
+</div>
+</section>
+</main>
+<!-- Footer -->
+<footer class="bg-[#002241] dark:bg-[#0A0A0A] w-full no-line-philosophy">
+<div class="grid grid-cols-1 md:grid-cols-4 gap-12 px-12 py-20 w-full max-w-7xl mx-auto">
+<div class="col-span-1">
+<h5 class="text-3xl font-black text-white uppercase font-impact mb-6">CBS RUGBY</h5>
+<p class="font-condensed text-sm tracking-wide text-white/60">
+                    The premier athletic organization at Columbia Business School. Building leaders on and off the pitch since 1970.
+                </p>
+</div>
+<div>
+<h6 class="font-impact text-2xl text-[#C9A84C] mb-6 uppercase">NAVIGATE</h6>
+<div class="flex flex-col gap-3">
+<a class="font-condensed text-sm tracking-wide text-white/60 hover:text-[#C9A84C] transition-colors" href="#">HOME</a>
+<a class="font-condensed text-sm tracking-wide text-white/60 hover:text-[#C9A84C] transition-colors" href="#">ABOUT</a>
+<a class="font-condensed text-sm tracking-wide text-white/60 hover:text-[#C9A84C] transition-colors" href="#">EVENTS</a>
+<a class="font-condensed text-sm tracking-wide text-white/60 hover:text-[#C9A84C] transition-colors" href="#">RECRUITS</a>
+</div>
+</div>
+<div>
+<h6 class="font-impact text-2xl text-[#C9A84C] mb-6 uppercase">RESOURCES</h6>
+<div class="flex flex-col gap-3">
+<a class="font-condensed text-sm tracking-wide text-white/60 hover:text-[#C9A84C] transition-colors" href="#">ALUMNI</a>
+<a class="font-condensed text-sm tracking-wide text-white/60 hover:text-[#C9A84C] transition-colors" href="#">SPONSORS</a>
+<a class="font-condensed text-sm tracking-wide text-white/60 hover:text-[#C9A84C] transition-colors" href="#">MEDIA</a>
+<a class="font-condensed text-sm tracking-wide text-white/60 hover:text-[#C9A84C] transition-colors" href="#">RWC 2026</a>
+</div>
+</div>
+<div>
+<h6 class="font-impact text-2xl text-[#C9A84C] mb-6 uppercase">CONNECT</h6>
+<div class="flex gap-4">
+<span class="material-symbols-outlined text-white/60 hover:text-white cursor-pointer" data-icon="share">share</span>
+<span class="material-symbols-outlined text-white/60 hover:text-white cursor-pointer" data-icon="mail">mail</span>
+<span class="material-symbols-outlined text-white/60 hover:text-white cursor-pointer" data-icon="distance">distance</span>
+</div>
+<p class="mt-8 font-condensed text-xs text-white/40 tracking-widest">
+                    © 2024 CBS RUGBY FOOTBALL CLUB. ALL RIGHTS RESERVED.
+                </p>
+</div>
+</div>
+</footer>
+</body></html>
