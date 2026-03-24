@@ -5,7 +5,7 @@
   "scripts": {
     "build:css": "tailwindcss -i ./assets/css/tailwind.css -o ./assets/css/main.css --minify",
     "watch:css": "tailwindcss -i ./assets/css/tailwind.css -o ./assets/css/main.css --watch",
-    "build": "npm run build:css",
+    "build": "node scripts/inject-env.js && npm run build:css",
     "dev": "npm run watch:css"
   },
   "keywords": [],

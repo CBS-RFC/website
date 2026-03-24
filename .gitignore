@@ -4,10 +4,7 @@ node_modules/
 # Compiled CSS (regenerated via npm run build)
 assets/css/main.css
 
-# Secrets — copy _content/site.example.json → _content/site.json and fill in values
-_content/site.json
-
-# Environment files
+# Environment files — secrets live here locally, set as env vars in Netlify
 .env
 .env.local
 .env*.local
