@@ -1,0 +1,44 @@
+{
+  "year": 2026,
+  "date": "April 25, 2026",
+  "location": "Governor's Island, New York City",
+  "tagline": "14 Teams. 1 Champion.",
+  "teams": [
+    { "name": "Columbia (CBS)", "confirmed": true, "division": "mens", "logo": "assets/images/logos/logo-cbs.png" },
+    { "name": "Wharton", "confirmed": true, "division": "mens", "logo": "assets/images/logos/logo-wharton.png" },
+    { "name": "Harvard (HBS)", "confirmed": true, "division": "mens", "logo": "assets/images/logos/logo-hbs.png" },
+    { "name": "Booth (Chicago)", "confirmed": true, "division": "mens", "logo": "assets/images/logos/logo-booth.jpg" },
+    { "name": "London (LBS)", "confirmed": true, "division": "mens", "logo": "assets/images/logos/logo-lbs.jpg" },
+    { "name": "Yale", "confirmed": true, "division": "mens", "logo": "assets/images/logos/logo-yale.jpg" },
+    { "name": "NYU (Stern)", "confirmed": true, "division": "mens", "logo": "assets/images/logos/logo-nyu.jpg" },
+    { "name": "Kellogg", "confirmed": true, "division": "mens", "logo": "assets/images/logos/logo-kellogg.png" },
+    { "name": "Michigan (Ross)", "confirmed": true, "division": "mens", "logo": "assets/images/logos/logo-michigan.png" },
+    { "name": "Stanford (GSB)", "confirmed": true, "division": "mens", "logo": "assets/images/logos/logo-stanford.png" },
+    { "name": "CBS–NYU", "confirmed": true, "division": "womens", "logo": "assets/images/logos/logo-cbs.png" },
+    { "name": "Harvard (HBS)", "confirmed": true, "division": "womens", "logo": "assets/images/logos/logo-hbs.png" },
+    { "name": "Yale", "confirmed": true, "division": "womens", "logo": "assets/images/logos/logo-yale.jpg" },
+    { "name": "Booth (Chicago)", "confirmed": true, "division": "womens", "logo": "assets/images/logos/logo-booth.jpg" }
+  ],
+  "faq": [
+    {
+      "question": "Who can attend?",
+      "answer": "The event is open to players, students, alumni, and supporters. Come cheer on your school."
+    },
+    {
+      "question": "How do we register a team?",
+      "answer": "Email us at cbs.rugby.fc@gmail.com or directly reach out to Joe Mozden, CBS Co-President."
+    },
+    {
+      "question": "Where exactly is Governor's Island?",
+      "answer": "Governor's Island is a short ferry ride from Lower Manhattan. Ferry details will be sent to registered teams and attendees."
+    },
+    {
+      "question": "What is the tournament format?",
+      "answer": "Group stage followed by knockout rounds, culminating in the final in the afternoon."
+    },
+    {
+      "question": "Is there a cost to attend?",
+      "answer": "Spectator admission is free. Team registration fees apply — contact us for the full prospectus."
+    }
+  ]
+}

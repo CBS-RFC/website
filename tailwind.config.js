@@ -1,0 +1,41 @@
+module.exports = {
+  content: ['./*.html', './_includes/*.html', './assets/js/*.js'],
+  darkMode: 'class',
+  theme: {
+    extend: {
+      colors: {
+        'primary':              '#002241',
+        'primary-container':    '#003865',
+        'tertiary-container':   '#C9A84C',
+        'tertiary':             '#755B00',
+        'surface':              '#FCF8F8',
+        'surface-container-low':'#F6F3F2',
+        'surface-container':    '#F0EDEC',
+        'surface-container-high': '#EBE7E7',
+        'surface-container-highest': '#E5E2E1',
+        'surface-container-lowest': '#FFFFFF',
+        'on-surface':           '#1C1B1B',
+        'on-surface-variant':   '#42474F',
+        'on-primary':           '#FFFFFF',
+        'on-primary-container': '#7BA2D5',
+        'secondary':            '#1D648B',
+        'outline-variant':      '#C2C6D0',
+        'outline':              '#737780',
+        'inverse-surface':      '#313030',
+        'inverse-on-surface':   '#F3F0EF',
+      },
+      fontFamily: {
+        'bebas-neue':       ['Bebas Neue', 'sans-serif'],
+        'barlow-condensed': ['Barlow Condensed', 'sans-serif'],
+        'manrope':          ['Manrope', 'sans-serif'],
+      },
+      borderRadius: {
+        'DEFAULT': '0px',
+        'lg':      '0px',
+        'xl':      '0px',
+        'full':    '9999px',
+      },
+    },
+  },
+  plugins: [require('@tailwindcss/forms')],
+}

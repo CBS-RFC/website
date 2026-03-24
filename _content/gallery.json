@@ -1,0 +1,33 @@
+{
+  "photos": [
+    { "src": "assets/images/gallery/matches/gotham-cup-2024-01.jpg", "category": "matches", "caption": "Gotham Cup 2024 — 01" },
+    { "src": "assets/images/gallery/matches/gotham-cup-2024-02.jpg", "category": "matches", "caption": "Gotham Cup 2024 — 02" },
+    { "src": "assets/images/gallery/matches/gotham-cup-2024-03.jpg", "category": "matches", "caption": "Gotham Cup 2024 — 03" },
+    { "src": "assets/images/gallery/matches/gotham-cup-2024-04.jpg", "category": "matches", "caption": "Gotham Cup 2024 — 04" },
+    { "src": "assets/images/gallery/matches/gotham-cup-2024-05.jpg", "category": "matches", "caption": "Gotham Cup 2024 — 05" },
+
+    { "src": "assets/images/gallery/social/hogfest-2024-01.JPG", "category": "matches", "caption": "Hogfest 2024 — 01" },
+    { "src": "assets/images/gallery/social/hogfest-2024-02.JPG", "category": "matches", "caption": "Hogfest 2024 — 02" },
+    { "src": "assets/images/gallery/social/hogfest-2024-03.JPG", "category": "matches", "caption": "Hogfest 2024 — 03" },
+    { "src": "assets/images/gallery/social/hogfest-2024-04.JPG", "category": "matches", "caption": "Hogfest 2024 — 04" },
+    { "src": "assets/images/gallery/social/rugby-happy-hour-01.jpg", "category": "social", "caption": "Rugby Happy Hour — 01" },
+    { "src": "assets/images/gallery/social/rugby-happy-hour-02.jpg", "category": "social", "caption": "Rugby Happy Hour — 02" },
+    { "src": "assets/images/gallery/social/rugby-happy-hour-03.JPG", "category": "social", "caption": "Rugby Happy Hour — 03" },
+
+    { "src": "assets/images/gallery/alumni-game/alumni-01.png", "category": "alumni-game", "caption": "Alumni Game — 01" },
+    { "src": "assets/images/gallery/alumni-game/alumni-02.jpg", "category": "alumni-game", "caption": "Alumni Game — 02" },
+    { "src": "assets/images/gallery/alumni-game/alumni-03.jpg", "category": "alumni-game", "caption": "Alumni Game — 03" },
+    { "src": "assets/images/gallery/alumni-game/alumni-04.jpg", "category": "alumni-game", "caption": "Alumni Game — 04" },
+
+    { "src": "assets/images/gallery/rwc/rwc-2025-01.jpg", "category": "rwc", "caption": "RWC 2025 — 01" },
+    { "src": "assets/images/gallery/rwc/rwc-2025-02.jpg", "category": "rwc", "caption": "RWC 2025 — 02" },
+    { "src": "assets/images/gallery/rwc/rwc-2025-03.jpg", "category": "rwc", "caption": "RWC 2025 — 03" },
+    { "src": "assets/images/gallery/rwc/rwc-2025-04.jpg", "category": "rwc", "caption": "RWC 2025 — 04" },
+    { "src": "assets/images/gallery/rwc/rwc-2025-05.jpg", "category": "rwc", "caption": "RWC 2025 — 05" },
+    { "src": "assets/images/gallery/rwc/rwc-2025-06.jpeg", "category": "rwc", "caption": "RWC 2025 — 06" },
+
+    { "src": "assets/images/gallery/training/team-01.jpg", "category": "training", "caption": "Training — Team 01" },
+    { "src": "assets/images/gallery/training/team-02.JPG", "category": "training", "caption": "Training — Team 02" },
+    { "src": "assets/images/gallery/training/team-03.jpeg", "category": "training", "caption": "Training — Team 03" }
+  ]
+}

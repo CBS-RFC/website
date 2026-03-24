@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <meta name="description" content="Columbia Business School Rugby Football Club — The oldest club at CBS, building tradition, teamwork, and community since 1968."/>
+  <meta property="og:title" content="CBS RFC | Columbia Business School Rugby Football Club"/>
+  <meta property="og:description" content="The oldest club at CBS. Building tradition, teamwork, and community on and off the pitch since 1968."/>
+  <meta property="og:image" content="assets/images/og-image.jpg"/>
+  <meta property="og:type" content="website"/>
+  <title>CBS RFC | Columbia Business School Rugby Football Club</title>
+  <!-- Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Barlow+Condensed:wght@400;600;700&family=Manrope:wght@400;500;700&display=swap" rel="stylesheet"/>
+  <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@400,0&display=swap" rel="stylesheet"/>
+  <!-- Compiled CSS -->
+  <link rel="stylesheet" href="assets/css/main.css"/>
+  <link rel="icon" href="assets/images/logo/cbs-rfc-crest.png"/>
+</head>
+<body class="bg-surface text-on-surface selection:bg-tertiary-container selection:text-on-surface overflow-x-hidden">
+
+  <!-- NAV INJECT -->
+  <div id="nav-placeholder"></div>
+
+  <main>
+
+    <!-- ══════════════════════════════════════════════════════
+         Section 1: Hero
+    ══════════════════════════════════════════════════════ -->
+    <section class="relative h-screen w-full flex items-center overflow-hidden bg-[#0A0A0A]">
+      <div class="absolute inset-0 z-0">
+        <img class="w-full h-full object-cover grayscale-[20%]"
+             src="assets/images/heroes/home-hero.jpg"
+             alt="Intense rugby match action"
+             onerror="this.style.display='none'"/>
+        <div class="absolute inset-0" style="background:rgba(10,10,10,0.10)"></div>
+        <div class="absolute inset-0" style="background:linear-gradient(to right, rgba(10,10,10,0.90), rgba(10,10,10,0.0), transparent)"></div>
+      </div>
+      <div class="relative z-10 px-8 md:px-20 max-w-5xl" data-animate>
+        <p class="text-tertiary-container font-barlow-condensed font-bold uppercase tracking-[0.3em] mb-4">THE OLDEST CLUB AT CBS</p>
+        <h1 class="text-white font-bebas-neue text-6xl md:text-9xl leading-[0.9] tracking-tighter mb-6">
+          COLUMBIA BUSINESS SCHOOL<br/>RUGBY FC
+        </h1>
+        <p class="text-white/85 font-manrope text-lg md:text-xl max-w-[540px] leading-relaxed mb-10">
+          Building tradition, teamwork, and community on and off the pitch since 1968.
+        </p>
+        <div class="flex flex-wrap gap-4">
+          <a href="recruits.html"
+             class="bg-tertiary-container text-primary px-10 py-4 font-barlow-condensed font-bold uppercase tracking-widest text-lg hover:-translate-y-0.5 transition-all shadow-xl inline-block">
+            JOIN THE CLUB
+          </a>
+          <a href="about.html"
+             class="border-2 border-white text-white px-10 py-4 font-barlow-condensed font-bold uppercase tracking-widest text-lg hover:bg-white hover:text-primary transition-all inline-block">
+            OUR STORY
+          </a>
+        </div>
+      </div>
+      <div class="absolute bottom-10 left-1/2 -translate-x-1/2 text-white/50 animate-bounce">
+        <span class="material-symbols-outlined text-4xl">expand_more</span>
+      </div>
+    </section>
+
+    <!-- ══════════════════════════════════════════════════════
+         Section 2: Stats Bar
+    ══════════════════════════════════════════════════════ -->
+    <section class="bg-primary py-8 px-8 overflow-hidden">
+      <div class="max-w-7xl mx-auto flex flex-wrap justify-center md:justify-between items-center gap-8 md:gap-4">
+        <div class="flex flex-col md:flex-row items-center gap-2" data-animate>
+          <span class="font-bebas-neue text-4xl text-tertiary-container">EST. 1968</span>
+          <span class="hidden md:block w-px h-8 bg-white/20 mx-4"></span>
+        </div>
+        <div class="flex flex-col md:flex-row items-center gap-2" data-animate data-animate-delay="100">
+          <span class="font-bebas-neue text-4xl text-tertiary-container">55+</span>
+          <span class="font-barlow-condensed text-white uppercase tracking-widest font-semibold">Years of Tradition</span>
+          <span class="hidden md:block w-px h-8 bg-white/20 mx-4"></span>
+        </div>
+        <div class="flex flex-col md:flex-row items-center gap-2" data-animate data-animate-delay="200">
+          <span class="font-bebas-neue text-4xl text-tertiary-container">100+</span>
+          <span class="font-barlow-condensed text-white uppercase tracking-widest font-semibold">Active Members</span>
+          <span class="hidden md:block w-px h-8 bg-white/20 mx-4"></span>
+        </div>
+        <div class="flex flex-col md:flex-row items-center gap-2" data-animate data-animate-delay="300">
+          <span class="font-bebas-neue text-4xl text-tertiary-container">NYC BASED</span>
+        </div>
+      </div>
+    </section>
+
+    <!-- ══════════════════════════════════════════════════════
+         Section 3: Featured Event (RWC 2026 banner)
+         Rendered by content-loader.js from featured-event.json
+         Hidden automatically if active: false
+    ══════════════════════════════════════════════════════ -->
+    <div id="featured-event-section"></div>
+
+    <!-- ══════════════════════════════════════════════════════
+         Section 4: Who We Are
+    ══════════════════════════════════════════════════════ -->
+    <section class="py-24 px-8 bg-surface">
+      <div class="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-20 items-center">
+        <div class="relative" data-animate>
+          <div class="absolute -top-6 -left-6 w-32 h-32 bg-tertiary-container/10 z-0"></div>
+          <img class="w-full aspect-[4/5] object-cover relative z-10 shadow-2xl bg-surface-container-highest"
+               src="assets/images/heroes/about-hero.jpg"
+               alt="Rugby team huddle and brotherhood"
+               onerror="this.src=''"/>
+          <div class="absolute -bottom-10 -right-10 hidden md:block w-2/3 h-1/2 border-8 border-primary/5 -z-10"></div>
+        </div>
+        <div class="flex flex-col gap-8" data-animate data-animate-delay="100">
+          <h2 class="font-bebas-neue text-6xl md:text-7xl text-primary leading-tight">MORE THAN A TEAM.<br/>IT'S A TRADITION.</h2>
+          <p class="font-manrope text-lg text-on-surface-variant leading-relaxed">
+            The CBS Rugby Football Club is the longest-standing organization (athletic or otherwise!) at Columbia Business School. We believe in the power of MBA rugby to help you develop resilience, expand your network, and create friendships that will last long after you graduate.
+          </p>
+          <a class="font-barlow-condensed font-bold text-xl uppercase tracking-widest text-primary hover:text-tertiary-container flex items-center gap-2 group" href="about.html">
+            OUR FULL STORY <span class="transition-transform group-hover:translate-x-2">→</span>
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- ══════════════════════════════════════════════════════
+         Section 5: Three Pillars
+    ══════════════════════════════════════════════════════ -->
+    <section class="py-24 px-8 bg-surface-container-low">
+      <div class="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-3 gap-12">
+        <div class="flex flex-col gap-6 p-10 bg-surface border-b-4 border-primary" data-animate>
+          <span class="material-symbols-outlined text-5xl text-primary">sports_rugby</span>
+          <h3 class="font-bebas-neue text-4xl text-primary tracking-tight">COMPETE</h3>
+          <p class="font-manrope text-on-surface-variant leading-relaxed">
+            Test your limits against elite business school programs globally. From NYC local matches to the World Cup pitch.
+          </p>
+        </div>
+        <div class="flex flex-col gap-6 p-10 bg-surface border-b-4 border-tertiary-container" data-animate data-animate-delay="100">
+          <span class="material-symbols-outlined text-5xl text-tertiary-container">groups</span>
+          <h3 class="font-bebas-neue text-4xl text-primary tracking-tight">CONNECT</h3>
+          <p class="font-manrope text-on-surface-variant leading-relaxed">
+            Join a brotherhood and sisterhood that spans decades. Our social calendar is just as important as our training schedule.
+          </p>
+        </div>
+        <div class="flex flex-col gap-6 p-10 bg-surface border-b-4 border-primary" data-animate data-animate-delay="200">
+          <span class="material-symbols-outlined text-5xl text-primary">leaderboard</span>
+          <h3 class="font-bebas-neue text-4xl text-primary tracking-tight">LEAD</h3>
+          <p class="font-manrope text-on-surface-variant leading-relaxed">
+            Take command on the field and in organization. CBS RFC members get the chance to help direct one of CBS' most impactful clubs.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- ══════════════════════════════════════════════════════
+         Section 6: Upcoming Events (Google Calendar)
+    ══════════════════════════════════════════════════════ -->
+    <section class="py-24 px-8 bg-surface">
+      <div class="max-w-7xl mx-auto">
+        <div class="flex justify-between items-end mb-16">
+          <h2 class="font-bebas-neue text-6xl text-primary" data-animate>WHAT'S COMING UP</h2>
+          <a class="hidden md:flex font-barlow-condensed font-bold text-xl uppercase tracking-widest text-primary hover:text-tertiary-container items-center gap-2 group" href="events.html">
+            VIEW ALL EVENTS <span class="transition-transform group-hover:translate-x-2">→</span>
+          </a>
+        </div>
+        <!-- Calendar events injected here by calendar.js -->
+        <div id="events-preview" data-animate>
+          <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+            <div class="col-span-3 py-12 text-center">
+              <span class="material-symbols-outlined text-4xl text-outline-variant animate-spin">progress_activity</span>
+              <p class="font-barlow-condensed uppercase tracking-widest text-outline mt-4">Loading events…</p>
+            </div>
+          </div>
+        </div>
+        <div class="mt-12 md:hidden">
+          <a class="font-barlow-condensed font-bold text-xl uppercase tracking-widest text-primary hover:text-tertiary-container flex items-center gap-2 group" href="events.html">
+            VIEW ALL EVENTS <span class="transition-transform group-hover:translate-x-2">→</span>
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- ══════════════════════════════════════════════════════
+         Section 7: Alumni Teaser
+    ══════════════════════════════════════════════════════ -->
+    <section class="bg-primary py-24 px-8 relative overflow-hidden">
+      <div class="max-w-5xl mx-auto text-center flex flex-col items-center gap-10" data-animate>
+        <h2 class="font-barlow-condensed italic font-bold text-4xl md:text-6xl text-white tracking-tight leading-tight">
+          "From the Pitch to the Boardroom (or retired!)"
+        </h2>
+        <p class="font-manrope text-white/70 text-lg max-w-2xl">
+          Our alumni network consists of over 500+ active alumni and is a critical component of the club.
+        </p>
+        <a href="alumni.html"
+           class="bg-transparent border-2 border-white text-white px-12 py-4 font-barlow-condensed font-bold uppercase tracking-widest text-xl hover:bg-white hover:text-primary transition-all inline-block">
+          EXPLORE ALUMNI
+        </a>
+      </div>
+      <div class="absolute top-0 left-0 w-32 h-full bg-tertiary-container opacity-5 -skew-x-12 -translate-x-16 pointer-events-none"></div>
+      <div class="absolute bottom-0 right-0 w-32 h-full bg-tertiary-container opacity-5 -skew-x-12 translate-x-16 pointer-events-none"></div>
+    </section>
+
+    <!-- ══════════════════════════════════════════════════════
+         Section 8: Recruit CTA
+    ══════════════════════════════════════════════════════ -->
+    <section class="bg-tertiary-container py-24 px-8">
+      <div class="max-w-7xl mx-auto flex flex-col md:flex-row justify-between items-center gap-12 text-center md:text-left" data-animate>
+        <div>
+          <h2 class="font-bebas-neue text-6xl md:text-8xl text-primary mb-4">READY TO JOIN THE PRIDE?</h2>
+          <p class="font-barlow-condensed font-semibold text-primary uppercase tracking-[0.1em] text-xl">New students welcome! No prior rugby experience required. Most players join without any prior playing experience</p>
+        </div>
+        <a href="recruits.html"
+           class="border-4 border-primary text-primary px-16 py-6 font-barlow-condensed font-bold uppercase tracking-widest text-2xl hover:bg-primary hover:text-white transition-all whitespace-nowrap inline-block">
+          GET INVOLVED
+        </a>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- FOOTER INJECT -->
+  <div id="footer-placeholder"></div>
+
+  <!-- Scripts -->
+  <script src="assets/js/animations.js"></script>
+  <script src="assets/js/nav.js"></script>
+  <script src="assets/js/content-loader.js"></script>
+  <script src="assets/js/calendar.js"></script>
+
+</body>
+</html>

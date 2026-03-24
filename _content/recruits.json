@@ -1,0 +1,40 @@
+{
+  "practice_schedule": [
+    {
+      "team": "Men's",
+      "days": "Tuesday & Friday",
+      "location": "Riverside Park"
+    },
+    {
+      "team": "Women's",
+      "days": "Friday",
+      "location": "Riverside Park"
+    },
+    {
+      "team": "Everyone Happy Hour",
+      "days": "Wednesday Evening",
+      "time": "8:30 PM",
+      "location": "Jake's Dilemma"
+    }
+  ],
+  "player_quotes": [
+    {
+      "quote": "In grad school, everyone is at a different place in life. Rugby was the one thing that brought us all together, and I've made some of my best friends in the world through this club. Hands down, the best decision I made at CBS.",
+      "name": "Joe Mozden",
+      "year": "CBS '26",
+      "photo": "assets/images/team/joe-mozden.jpg"
+    },
+    {
+      "quote": "In rugby, you fuck or get fucked. And if you haven't figured it out yet, you're probably getting fucked",
+      "name": "Giacomo Tritto",
+      "year": "CBS '26",
+      "photo": "assets/images/team/placeholder.jpg"
+    },
+    {
+      "quote": "I like boys",
+      "name": "Eisuke Miyamoto",
+      "year": "CBS '26",
+      "photo": "assets/images/team/eisuke-miyamoto.jpg"
+    }
+  ]
+}

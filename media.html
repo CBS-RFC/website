@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <meta name="description" content="CBS RFC Media Gallery — On the pitch and off it. Photos from matches, socials, tours, and more."/>
+  <meta property="og:title" content="Media | CBS RFC"/>
+  <meta property="og:description" content="On the pitch and off it. CBS RFC photo gallery."/>
+  <meta property="og:image" content="assets/images/og-image.jpg"/>
+  <meta property="og:type" content="website"/>
+  <title>Media | CBS RFC</title>
+  <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Barlow+Condensed:wght@400;600;700&family=Manrope:wght@400;500;700&display=swap" rel="stylesheet"/>
+  <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@400,0&display=swap" rel="stylesheet"/>
+  <link rel="stylesheet" href="assets/css/main.css"/>
+  <link rel="icon" href="assets/images/logo/cbs-rfc-crest.png"/>
+</head>
+<body class="bg-surface text-on-surface selection:bg-tertiary-container selection:text-on-surface overflow-x-hidden">
+
+  <div id="nav-placeholder"></div>
+
+  <!-- Lightbox (built by gallery.js) -->
+
+  <main class="pt-[72px]">
+
+    <!-- Hero -->
+    <section class="relative h-[600px] w-full overflow-hidden flex items-center justify-center">
+      <div class="absolute inset-0 bg-primary z-10 opacity-50"></div>
+      <img alt="Rugby match action" class="absolute inset-0 w-full h-full object-cover"
+           src="assets/images/heroes/media-hero.jpg" onerror="this.style.display='none'"/>
+      <div class="relative z-20 text-center px-4 max-w-4xl" data-animate>
+        <h1 class="font-bebas-neue text-7xl md:text-9xl text-surface leading-none tracking-tight uppercase">
+          ON THE PITCH <br/> <span class="text-tertiary-container">&amp; OFF IT</span>
+        </h1>
+        <div class="mt-6 flex justify-center gap-4">
+          <span class="bg-surface/10 backdrop-blur-md px-4 py-1 text-surface font-barlow-condensed uppercase tracking-widest text-sm border-l-2 border-tertiary-container">EST. 1968</span>
+          <span class="bg-surface/10 backdrop-blur-md px-4 py-1 text-surface font-barlow-condensed uppercase tracking-widest text-sm border-l-2 border-tertiary-container">COLUMBIA UNIVERSITY</span>
+        </div>
+      </div>
+    </section>
+
+    <!-- Filter Tabs + Gallery -->
+    <section class="py-24 bg-surface-container-low px-8">
+      <div class="max-w-7xl mx-auto">
+        <div class="flex flex-col md:flex-row justify-between items-end mb-16 gap-8">
+          <div data-animate>
+            <h2 class="font-bebas-neue text-5xl text-primary uppercase">PHOTO GALLERY</h2>
+            <div class="h-1 w-24 bg-tertiary-container mt-2"></div>
+          </div>
+          <div class="flex flex-wrap gap-3 font-barlow-condensed text-sm font-bold uppercase tracking-widest" data-animate>
+            <button data-gallery-filter="all"
+                    class="px-6 py-2 bg-primary text-surface transition-colors">ALL</button>
+            <button data-gallery-filter="matches"
+                    class="px-6 py-2 border border-outline-variant text-primary hover:border-primary transition-colors">MATCHES</button>
+            <button data-gallery-filter="social"
+                    class="px-6 py-2 border border-outline-variant text-primary hover:border-primary transition-colors">SOCIAL</button>
+            <button data-gallery-filter="alumni-game"
+                    class="px-6 py-2 border border-outline-variant text-primary hover:border-primary transition-colors">ALUMNI GAME</button>
+            <button data-gallery-filter="rwc"
+                    class="px-6 py-2 border border-outline-variant text-primary hover:border-primary transition-colors">RWC</button>
+            <button data-gallery-filter="training"
+                    class="px-6 py-2 border border-outline-variant text-primary hover:border-primary transition-colors">TRAINING</button>
+          </div>
+        </div>
+
+        <!-- Masonry grid — populated by content-loader.js reading gallery.json -->
+        <div id="gallery-grid" class="masonry-grid">
+          <div class="masonry-item-medium flex items-center justify-center text-center">
+            <div>
+              <span class="material-symbols-outlined text-4xl text-outline-variant block mb-2">photo_library</span>
+              <p class="font-barlow-condensed uppercase tracking-widest text-outline text-sm">Loading gallery…</p>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- Instagram Follow Row -->
+    <section class="bg-primary pt-16 pb-0">
+      <div class="px-8 pb-12 flex justify-between items-end max-w-7xl mx-auto" data-animate>
+        <div>
+          <h2 class="font-bebas-neue text-4xl text-surface uppercase">@CBSRUGBY</h2>
+          <p class="font-barlow-condensed text-tertiary-container uppercase tracking-widest text-sm">FOLLOW FOR REAL-TIME UPDATES</p>
+        </div>
+        <a id="ig-follow-link" href="#"
+           class="font-barlow-condensed text-surface border-b border-surface/30 hover:border-tertiary-container transition-colors uppercase text-sm font-bold tracking-widest pb-1">
+          FOLLOW ON INSTAGRAM
+        </a>
+      </div>
+    </section>
+
+  </main>
+
+  <div id="footer-placeholder"></div>
+
+  <script src="assets/js/animations.js"></script>
+  <script src="assets/js/nav.js"></script>
+  <script src="assets/js/content-loader.js"></script>
+  <script src="assets/js/gallery.js"></script>
+  <script>
+    // Wire up Instagram link from site.json
+    (async () => {
+      try {
+        const res = await fetch('_content/site.json');
+        const site = await res.json();
+        if (site.instagram) {
+          document.getElementById('ig-follow-link').href = site.instagram;
+        }
+      } catch(e) {}
+    })();
+  </script>
+
+</body>
+</html>

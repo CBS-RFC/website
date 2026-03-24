@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <meta name="description" content="CBS RFC Events — Upcoming matches, socials, and special events. Stay in the loop."/>
+  <meta property="og:title" content="Events | CBS RFC"/>
+  <meta property="og:description" content="Upcoming matches, socials, and special events for CBS Rugby Football Club."/>
+  <meta property="og:image" content="assets/images/og-image.jpg"/>
+  <meta property="og:type" content="website"/>
+  <title>Events | CBS RFC</title>
+  <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Barlow+Condensed:wght@400;600;700&family=Manrope:wght@400;500;700&display=swap" rel="stylesheet"/>
+  <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@400,0&display=swap" rel="stylesheet"/>
+  <link rel="stylesheet" href="assets/css/main.css"/>
+  <link rel="icon" href="assets/images/logo/cbs-rfc-crest.png"/>
+</head>
+<body class="bg-surface text-on-surface selection:bg-tertiary-container selection:text-on-surface overflow-x-hidden">
+
+  <div id="nav-placeholder"></div>
+
+  <main>
+
+    <!-- Hero -->
+    <header class="relative h-[409px] min-h-[350px] w-full flex items-center justify-center overflow-hidden mt-[72px]">
+      <div class="absolute inset-0 z-0">
+        <img class="w-full h-full object-cover" src="assets/images/heroes/events-hero.jpg"
+             alt="Rugby match" onerror="this.style.display='none'"/>
+        <div class="absolute inset-0 bg-primary/50 mix-blend-multiply"></div>
+        <div class="absolute inset-0 bg-gradient-to-t from-primary via-transparent to-transparent opacity-50"></div>
+      </div>
+      <div class="relative z-10 text-center px-8" data-animate>
+        <h1 class="font-bebas-neue text-7xl md:text-9xl text-white tracking-tight leading-none uppercase">UPCOMING EVENTS</h1>
+        <p class="font-barlow-condensed text-tertiary-container text-xl md:text-2xl uppercase tracking-[0.2em] mt-2 font-semibold">Fixtures and Socials</p>
+      </div>
+    </header>
+
+    <!-- Filter Tabs -->
+    <section class="py-8 px-8 bg-surface border-b border-outline-variant/30">
+      <div class="max-w-7xl mx-auto flex flex-wrap gap-3 items-center">
+        <button data-filter="all"      class="px-6 py-2 font-barlow-condensed font-bold text-sm tracking-widest uppercase bg-primary text-surface transition-colors">ALL</button>
+        <button data-filter="match"    class="px-6 py-2 font-barlow-condensed font-bold text-sm tracking-widest uppercase border border-outline-variant text-primary hover:border-primary transition-colors">MATCHES</button>
+        <button data-filter="social"   class="px-6 py-2 font-barlow-condensed font-bold text-sm tracking-widest uppercase border border-outline-variant text-primary hover:border-primary transition-colors">SOCIAL</button>
+        <button data-filter="practice" class="px-6 py-2 font-barlow-condensed font-bold text-sm tracking-widest uppercase border border-outline-variant text-primary hover:border-primary transition-colors">PRACTICE</button>
+        <button data-filter="special"  class="px-6 py-2 font-barlow-condensed font-bold text-sm tracking-widest uppercase border border-outline-variant text-primary hover:border-primary transition-colors">SPECIAL</button>
+      </div>
+    </section>
+
+    <!-- Events List — populated by calendar.js -->
+    <section class="py-12 px-8 md:px-20 bg-surface">
+      <div class="max-w-7xl mx-auto">
+        <div id="events-list">
+          <div class="py-16 text-center">
+            <span class="material-symbols-outlined text-4xl text-outline-variant">progress_activity</span>
+            <p class="font-barlow-condensed uppercase tracking-widest text-outline mt-4">Loading events…</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Past Results -->
+    <section class="py-16 px-8 md:px-20 bg-surface-container-low">
+      <div class="max-w-7xl mx-auto">
+        <div class="mb-10" data-animate>
+          <h2 class="font-bebas-neue text-5xl md:text-7xl text-primary uppercase tracking-tighter">Past Results</h2>
+          <div class="h-1 w-24 bg-tertiary-container mt-3"></div>
+        </div>
+        <div id="results-table">
+          <div class="py-12 text-center">
+            <span class="material-symbols-outlined text-4xl text-outline-variant">progress_activity</span>
+            <p class="font-barlow-condensed uppercase tracking-widest text-outline mt-4">Loading results…</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Cornerstone Events -->
+    <section class="py-24 bg-primary text-white overflow-hidden">
+      <div class="px-8 md:px-20 mb-16 max-w-7xl mx-auto" data-animate>
+        <h2 class="font-bebas-neue text-5xl md:text-7xl uppercase tracking-tighter">OUR CORNERSTONE EVENTS</h2>
+        <div class="h-1 w-24 bg-tertiary-container mt-4"></div>
+      </div>
+      <div class="flex flex-col md:flex-row w-full gap-2 px-2">
+        <div class="flex-1 relative h-[500px] overflow-hidden group" data-animate>
+          <img class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110 bg-primary-container"
+               src="assets/images/gallery/alumni-game/alumni-01.png"
+               alt="Alumni Game" onerror="this.style.display='none'"/>
+          <div class="absolute inset-0 bg-gradient-to-t from-primary via-primary/20 to-transparent"></div>
+          <div class="absolute bottom-0 left-0 p-10">
+            <h3 class="font-bebas-neue text-4xl mb-4 text-tertiary-container">ALUMNI GAME</h3>
+            <p class="font-barlow-condensed text-lg text-white/80 max-w-sm uppercase leading-tight font-semibold">The annual battle where past legends return to the pitch to face the current squad.</p>
+          </div>
+        </div>
+        <div class="flex-1 relative h-[500px] overflow-hidden group" data-animate data-animate-delay="100">
+          <img class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110 bg-primary-container"
+               src="assets/images/gallery/matches/gotham-cup-2026-01.jpg"
+               alt="Gotham Cup" onerror="this.style.display='none'"/>
+          <div class="absolute inset-0 bg-gradient-to-t from-primary via-primary/20 to-transparent"></div>
+          <div class="absolute bottom-0 left-0 p-10">
+            <h3 class="font-bebas-neue text-4xl mb-4 text-tertiary-container">GOTHAM CUP</h3>
+            <p class="font-barlow-condensed text-lg text-white/80 max-w-sm uppercase leading-tight font-semibold">NYU vs. CBS, hosted right in the heart of the city. The battle for Gotham!</p>
+          </div>
+        </div>
+        <div class="flex-1 relative h-[500px] overflow-hidden group" data-animate data-animate-delay="200">
+          <img class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110 bg-primary-container"
+               src="assets/images/gallery/rwc/rwc-2025-07.jpg"
+               alt="MBA Rugby World Cup" onerror="this.style.display='none'"/>
+          <div class="absolute inset-0 bg-gradient-to-t from-primary via-primary/20 to-transparent"></div>
+          <div class="absolute bottom-0 left-0 p-10">
+            <h3 class="font-bebas-neue text-4xl mb-4 text-tertiary-container">MBA RUGBY WORLD CUP</h3>
+            <p class="font-barlow-condensed text-lg text-white/80 max-w-sm uppercase leading-tight font-semibold">The pinnacle of global graduate sports — bringing together the best MBA clubs from across the globe.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Calendar CTA -->
+    <section class="py-32 px-8 md:px-20 text-center bg-surface-container-high border-y border-outline-variant/10">
+      <div class="max-w-3xl mx-auto" data-animate>
+        <h2 class="font-bebas-neue text-6xl text-primary mb-6 tracking-tight uppercase">STAY IN THE LOOP</h2>
+        <p class="font-barlow-condensed text-xl text-primary/70 uppercase tracking-widest font-semibold mb-10">Never miss a kickoff or social event. Subscribe to our official calendar.</p>
+        <a id="calendar-subscribe"
+           href="#"
+           target="_blank" rel="noopener"
+           class="bg-tertiary-container text-primary px-12 py-5 font-barlow-condensed font-bold uppercase tracking-[0.2em] text-lg hover:shadow-xl hover:-translate-y-1 transition-all duration-300 flex items-center gap-3 mx-auto w-fit active:scale-95">
+          <span class="material-symbols-outlined">calendar_add_on</span>
+          SUBSCRIBE TO CALENDAR
+        </a>
+      </div>
+    </section>
+
+  </main>
+
+  <div id="footer-placeholder"></div>
+
+  <script src="assets/js/animations.js"></script>
+  <script src="assets/js/nav.js"></script>
+  <script src="assets/js/content-loader.js"></script>
+  <script src="assets/js/events-filter.js"></script>
+  <script src="assets/js/calendar.js"></script>
+
+</body>
+</html>

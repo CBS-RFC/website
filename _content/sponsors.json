@@ -1,0 +1,29 @@
+{
+  "sponsors": [],
+  "tiers": {
+    "gold": {
+      "label": "Premier Partner",
+      "benefits": [
+        "Logo on club jerseys",
+        "Primary marketing exposure and logo placement",
+        "RWC 2026 presenting sponsor recognition",
+        "Social media features"
+      ]
+    },
+    "silver": {
+      "label": "Team Partner",
+      "benefits": [
+        "Logo on club website",
+        "RWC 2026 sponsor recognition",
+        "Social media features"
+      ]
+    },
+    "bronze": {
+      "label": "Community Partner",
+      "benefits": [
+        "Logo on club website",
+        "Social media features"
+      ]
+    }
+  }
+}

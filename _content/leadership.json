@@ -1,0 +1,58 @@
+{
+  "leadership": [
+    {
+      "name": "Joe Mozden",
+      "title": "Men's Co-President",
+      "photo": "assets/images/team/joe-mozden.jpg",
+      "linkedin": ""
+    },
+    {
+      "name": "Ryan Downey",
+      "title": "Men's Co-President",
+      "photo": "assets/images/team/ryan-downey.jpg",
+      "linkedin": ""
+    },
+    {
+      "name": "Will Cahill",
+      "title": "Head Men's Coach",
+      "photo": "assets/images/team/will-cahill.jpg",
+      "linkedin": ""
+    },
+    {
+      "name": "Heidi Liu",
+      "title": "Women's Co-President",
+      "photo": "assets/images/team/heidi-liu.jpg",
+      "linkedin": ""
+    },
+    {
+      "name": "Bri \"Breezy\" Sharkey",
+      "title": "Women's Co-President",
+      "photo": "assets/images/team/bri-sharkey.jpg",
+      "linkedin": ""
+    },
+    {
+      "name": "Giacomo Tritto",
+      "title": "Backs Coach",
+      "photo": "assets/images/team/giacomo-tritto.jpg",
+      "linkedin": ""
+    },
+    {
+      "name": "Andrew Schwartz",
+      "title": "Forwards Coach",
+      "photo": "assets/images/team/andrew-schwartz.jpg",
+      "linkedin": ""
+    },
+    {
+      "name": "Matt Pieringer",
+      "title": "VP of Events",
+      "photo": "assets/images/team/matt-pieringer.jpg",
+      "linkedin": ""
+    },
+    {
+      "name": "Eric Puleio",
+      "title": "Alumni Captain",
+      "photo": "assets/images/team/eric-puleio.jpg",
+      "linkedin": ""
+    }
+  ]
+}

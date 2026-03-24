@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <meta name="description" content="CBS RFC Alumni — The legacy lives on. From the pitch to the boardroom."/>
+  <meta property="og:title" content="Alumni | CBS RFC"/>
+  <meta property="og:description" content="CBS RFC Alumni Network — From the pitch to the boardroom."/>
+  <meta property="og:image" content="assets/images/og-image.jpg"/>
+  <meta property="og:type" content="website"/>
+  <title>Alumni | CBS RFC</title>
+  <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Barlow+Condensed:wght@400;600;700&family=Manrope:wght@400;500;700&display=swap" rel="stylesheet"/>
+  <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@400,0&display=swap" rel="stylesheet"/>
+  <link rel="stylesheet" href="assets/css/main.css"/>
+  <link rel="icon" href="assets/images/logo/cbs-rfc-crest.png"/>
+</head>
+<body class="bg-surface text-on-surface selection:bg-tertiary-container selection:text-on-surface overflow-x-hidden">
+
+  <div id="nav-placeholder"></div>
+
+  <main>
+
+    <!-- Hero -->
+    <header class="relative h-[409px] w-full flex items-end overflow-hidden bg-primary pt-[72px]">
+      <div class="absolute inset-0 z-0">
+        <img alt="Alumni team" class="w-full h-full object-cover opacity-40 grayscale"
+             src="assets/images/heroes/alumni-hero.jpg" onerror="this.style.display='none'"/>
+        <div class="absolute inset-0 bg-gradient-to-t from-primary to-transparent"></div>
+      </div>
+      <div class="relative z-10 px-8 pb-12 w-full max-w-7xl mx-auto" data-animate>
+        <h1 class="font-bebas-neue text-6xl md:text-8xl text-surface leading-none tracking-tighter">THE LEGACY LIVES ON</h1>
+        <p class="font-barlow-condensed text-tertiary-container text-2xl uppercase tracking-[0.2em]">CBS RFC ALUMNI NETWORK</p>
+      </div>
+    </header>
+
+    <!-- Stats Bar -->
+    <section class="bg-primary py-8 px-8 overflow-hidden">
+      <div class="max-w-7xl mx-auto flex flex-wrap justify-center md:justify-between items-center gap-8 md:gap-4">
+        <div class="flex flex-col md:flex-row items-center gap-2" data-animate>
+          <span class="font-bebas-neue text-4xl text-tertiary-container">500+</span>
+          <span class="font-barlow-condensed text-white uppercase tracking-widest font-semibold">Alumni</span>
+          <span class="hidden md:block w-px h-8 bg-white/20 mx-4"></span>
+        </div>
+        <div class="flex flex-col md:flex-row items-center gap-2" data-animate data-animate-delay="100">
+          <span class="font-bebas-neue text-4xl text-tertiary-container">55+</span>
+          <span class="font-barlow-condensed text-white uppercase tracking-widest font-semibold">Years of Tradition</span>
+          <span class="hidden md:block w-px h-8 bg-white/20 mx-4"></span>
+        </div>
+        <div class="flex flex-col md:flex-row items-center gap-2" data-animate data-animate-delay="200">
+          <span class="font-bebas-neue text-4xl text-tertiary-container">20+</span>
+          <span class="font-barlow-condensed text-white uppercase tracking-widest font-semibold">Industries</span>
+        </div>
+      </div>
+    </section>
+
+    <!-- Narrative + Quote -->
+    <section class="py-24 px-8 grid grid-cols-1 md:grid-cols-12 gap-12 bg-surface">
+      <div class="md:col-span-7" data-animate>
+        <h2 class="font-bebas-neue text-5xl md:text-7xl text-primary leading-tight mb-8">BOOTS ON THE SHELF</h2>
+        <div class="space-y-6 text-lg text-on-surface leading-relaxed font-manrope max-w-2xl">
+          <p>Over 500 CBS RFC alumni have carried the values of rugby into careers worldwide — and the alumni are an integral part of the CBS RFC family. Every year, we connect with our graduates to network, compete, and throw back a few cold ones.</p>
+          <p>Membership in the CBS RFC Alumni network is more than just nostalgia; it's about a lifelong commitment to being part of this great club. We leverage our network to mentor current players and drive success for our brothers and sisters in their post-MBA careers.</p>
+        </div>
+      </div>
+      <div class="md:col-span-5 flex items-center justify-center" data-animate data-animate-delay="100">
+        <div id="alumni-feature-quote">
+          <!-- Rendered by content-loader.js from alumni.json -->
+          <div class="relative p-8 bg-surface-container-low border-l-4 border-tertiary-container">
+            <span class="material-symbols-outlined text-tertiary-container text-6xl absolute -top-8 left-8 bg-surface px-2">format_quote</span>
+            <p class="font-barlow-condensed italic text-2xl text-primary leading-snug">"Rugby taught me more about organizational leadership than any textbook. The network made the transition seamless."</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Alumni Profiles — rendered from _content/alumni.json -->
+    <section class="py-24 px-8 bg-surface-container-low">
+      <div class="max-w-7xl mx-auto">
+        <div class="flex justify-between items-end mb-16">
+          <h2 class="font-bebas-neue text-5xl md:text-7xl text-primary" data-animate>ALUMNI PROFILES</h2>
+          <p class="font-barlow-condensed text-primary-container text-xl uppercase hidden md:block" data-animate>EXCELLENCE DEFINED</p>
+        </div>
+        <div id="alumni-profiles" class="grid grid-cols-1 md:grid-cols-3 gap-1">
+          <!-- Rendered by content-loader.js -->
+          <div class="col-span-full py-8 text-center">
+            <span class="material-symbols-outlined text-3xl text-outline-variant">progress_activity</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Annual Alumni Game -->
+    <section class="relative w-full py-32 bg-primary overflow-hidden">
+      <div class="absolute inset-0 z-0">
+        <img alt="Alumni game" class="w-full h-full object-cover opacity-30 mix-blend-overlay"
+             src="assets/images/gallery/alumni-game/alumni-02.jpg" onerror="this.style.display='none'"/>
+      </div>
+      <div class="relative z-10 max-w-5xl mx-auto px-8 text-center" data-animate>
+        <h2 class="font-bebas-neue text-6xl md:text-9xl text-surface leading-none mb-4">THE ANNUAL ALUMNI GAME</h2>
+        <p class="font-barlow-condensed text-tertiary-container text-3xl uppercase tracking-widest mb-12">RETURNING FALL 2026 • NYC </p>
+        <div class="flex justify-center">
+          <a href="mailto:cbs.rugby.fc@gmail.com"
+             class="bg-tertiary-container text-primary font-barlow-condensed font-bold py-5 px-12 text-xl hover:-translate-y-1 transition-transform duration-300 inline-block">
+            EMAIL YOUR RSVP
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- Alumni Form CTA -->
+    <section class="py-24 px-8 bg-surface-container-highest">
+      <div class="max-w-2xl mx-auto flex flex-col items-center text-center" data-animate>
+        <h2 class="font-bebas-neue text-6xl md:text-7xl text-primary mb-6">KEEP THE LEGACY GOING</h2>
+        <p class="font-manrope text-on-surface-variant text-lg mb-10">Alumni of CBS RFC? Fill out our alumni form to stay connected with the club.</p>
+        <a href="https://docs.google.com/forms/d/e/1FAIpQLSc6YwHXkG-1NlrUeC5cimansRhyHWU5Kz5kuKCVRol4H1zjgg/viewform?usp=sharing&ouid=103779183512677551828"
+           target="_blank" rel="noopener"
+           class="bg-tertiary-container text-primary font-barlow-condensed font-bold py-5 px-12 text-xl hover:-translate-y-1 transition-transform duration-300 inline-block">
+          ALUMNI FORM
+        </a>
+      </div>
+    </section>
+
+  </main>
+
+  <div id="footer-placeholder"></div>
+
+  <script src="assets/js/animations.js"></script>
+  <script src="assets/js/nav.js"></script>
+  <script src="assets/js/content-loader.js"></script>
+
+</body>
+</html>

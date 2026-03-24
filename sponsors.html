@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <meta name="description" content="Partner with CBS RFC — Elevate your brand by connecting with an elite global network of business leaders and athletes."/>
+  <meta property="og:title" content="Sponsors | CBS RFC"/>
+  <meta property="og:description" content="Partner with CBS RFC and gain unparalleled visibility with an elite network of MBA leaders."/>
+  <meta property="og:image" content="assets/images/og-image.jpg"/>
+  <meta property="og:type" content="website"/>
+  <title>Sponsors | CBS RFC</title>
+  <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Barlow+Condensed:wght@400;600;700&family=Manrope:wght@400;500;700&display=swap" rel="stylesheet"/>
+  <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@400,0&display=swap" rel="stylesheet"/>
+  <link rel="stylesheet" href="assets/css/main.css"/>
+  <link rel="icon" href="assets/images/logo/cbs-rfc-crest.png"/>
+</head>
+<body class="bg-surface text-on-surface selection:bg-tertiary-container selection:text-on-surface overflow-x-hidden">
+
+  <div id="nav-placeholder"></div>
+
+  <main class="pt-[72px]">
+
+    <!-- Hero -->
+    <section class="relative bg-primary py-24 px-8 overflow-hidden">
+      <div class="absolute inset-0 opacity-5 bg-surface-container-highest pointer-events-none"></div>
+      <div class="relative max-w-5xl mx-auto text-center" data-animate>
+        <h1 class="font-bebas-neue text-6xl md:text-8xl text-white tracking-tight leading-none mb-6">
+          PARTNER WITH <span class="text-tertiary-container">CBS RFC</span>
+        </h1>
+        <p class="font-barlow-condensed text-xl md:text-2xl text-white/80 uppercase tracking-widest max-w-2xl mx-auto">
+          Elevate your brand by connecting with an elite global network of business leaders and athletes.
+        </p>
+      </div>
+    </section>
+
+    <!-- Why Sponsor -->
+    <section class="py-24 px-8 bg-surface">
+      <div class="max-w-7xl mx-auto">
+        <h2 class="font-bebas-neue text-5xl text-primary mb-16 uppercase tracking-tighter" data-animate>WHY SPONSOR CBS RFC?</h2>
+        <div class="grid grid-cols-1 md:grid-cols-4 gap-12">
+          <div class="group" data-animate>
+            <span class="material-symbols-outlined text-5xl text-primary mb-6 group-hover:text-tertiary-container transition-colors block">groups</span>
+            <h3 class="font-barlow-condensed font-bold text-2xl uppercase mb-4">Access an Elite MBA Network</h3>
+            <p class="font-manrope text-on-surface-variant leading-relaxed">Direct access to the next generation of global executives and influential alumni networks.</p>
+          </div>
+          <div class="group" data-animate data-animate-delay="100">
+            <span class="material-symbols-outlined text-5xl text-primary mb-6 group-hover:text-tertiary-container transition-colors block">travel_explore</span>
+            <h3 class="font-barlow-condensed font-bold text-2xl uppercase mb-4">Brand Visibility at RWC</h3>
+            <p class="font-manrope text-on-surface-variant leading-relaxed">Strategic placement at the MBA Rugby World Cup, attracting thousands of international participants.</p>
+          </div>
+          <div class="group" data-animate data-animate-delay="200">
+            <span class="material-symbols-outlined text-5xl text-primary mb-6 group-hover:text-tertiary-container transition-colors block">military_tech</span>
+            <h3 class="font-barlow-condensed font-bold text-2xl uppercase mb-4">Support Student Leadership</h3>
+            <p class="font-manrope text-on-surface-variant leading-relaxed">Enable peer-led athletic development, teamwork, and high-performance organizational culture.</p>
+          </div>
+          <div class="group" data-animate data-animate-delay="300">
+            <span class="material-symbols-outlined text-5xl text-primary mb-6 group-hover:text-tertiary-container transition-colors block">history</span>
+            <h3 class="font-barlow-condensed font-bold text-2xl uppercase mb-4">55 Years of Tradition</h3>
+            <p class="font-manrope text-on-surface-variant leading-relaxed">Align your brand with over half a century of heritage, excellence, and sporting integrity.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Sponsor Tier Cards — rendered from _content/sponsors.json -->
+    <section class="py-24 px-8 bg-surface-container-low">
+      <div class="max-w-7xl mx-auto">
+        <div class="text-center mb-16" data-animate>
+          <h2 class="font-bebas-neue text-5xl uppercase tracking-tight text-primary">PARTNERSHIP TIERS</h2>
+          <div class="h-1 w-24 bg-tertiary-container mx-auto mt-4"></div>
+        </div>
+        <div id="sponsor-tier-cards" class="grid grid-cols-1 md:grid-cols-3 gap-8">
+          <!-- Rendered by content-loader.js from sponsors.json -->
+          <div class="col-span-full py-8 text-center">
+            <span class="material-symbols-outlined text-3xl text-outline-variant">progress_activity</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Current Partners logos — rendered from _content/sponsors.json -->
+    <section class="py-24 px-8 bg-surface">
+      <div class="max-w-7xl mx-auto">
+        <h4 class="font-barlow-condensed font-bold text-center text-outline-variant uppercase tracking-[0.3em] mb-12" data-animate>CURRENT PARTNERS</h4>
+        <div id="sponsor-logos" class="grid grid-cols-2 md:grid-cols-5 gap-16 items-center">
+          <!-- Rendered by content-loader.js from sponsors.json -->
+        </div>
+      </div>
+    </section>
+
+    <!-- Inquiry Form -->
+    <section class="bg-primary py-24 px-8">
+      <div class="max-w-4xl mx-auto p-12 border border-white/10" data-animate>
+        <div class="text-center mb-12">
+          <h2 class="font-bebas-neue text-5xl text-white uppercase mb-4">START THE CONVERSATION</h2>
+          <p class="text-white/60 font-barlow-condensed tracking-wide uppercase">Request our detailed 2026 World Cup Partnership Prospectus</p>
+        </div>
+        <form name="sponsor-inquiry" method="POST" data-netlify="true" netlify-honeypot="bot-field" id="sponsor-form"
+              class="grid grid-cols-1 md:grid-cols-2 gap-6">
+          <input type="hidden" name="form-name" value="sponsor-inquiry"/>
+          <p class="hidden"><input name="bot-field"/></p>
+          <div class="col-span-1">
+            <label class="block text-tertiary-container font-barlow-condensed font-bold text-sm mb-2 uppercase tracking-widest">Company Name</label>
+            <input class="w-full bg-white/10 border border-white/20 text-white focus:ring-tertiary-container focus:border-tertiary-container py-3 px-4 font-manrope placeholder:text-white/40"
+                   type="text" name="company" placeholder="Acme Corp" required/>
+          </div>
+          <div class="col-span-1">
+            <label class="block text-tertiary-container font-barlow-condensed font-bold text-sm mb-2 uppercase tracking-widest">Contact Name</label>
+            <input class="w-full bg-white/10 border border-white/20 text-white focus:ring-tertiary-container focus:border-tertiary-container py-3 px-4 font-manrope placeholder:text-white/40"
+                   type="text" name="contact_name" placeholder="Jane Smith" required/>
+          </div>
+          <div class="col-span-1">
+            <label class="block text-tertiary-container font-barlow-condensed font-bold text-sm mb-2 uppercase tracking-widest">Work Email</label>
+            <input class="w-full bg-white/10 border border-white/20 text-white focus:ring-tertiary-container focus:border-tertiary-container py-3 px-4 font-manrope placeholder:text-white/40"
+                   type="email" name="email" placeholder="jane@company.com" required/>
+          </div>
+          <div class="col-span-1">
+            <label class="block text-tertiary-container font-barlow-condensed font-bold text-sm mb-2 uppercase tracking-widest">Partnership Interest</label>
+            <select class="w-full bg-white/10 border border-white/20 text-white focus:ring-tertiary-container focus:border-tertiary-container py-3 px-4 font-manrope" name="tier">
+              <option class="bg-primary text-white">Select Tier…</option>
+              <option class="bg-primary text-white">Gold — Premier Partner</option>
+              <option class="bg-primary text-white">Silver — Team Partner</option>
+              <option class="bg-primary text-white">Bronze — Community Partner</option>
+              <option class="bg-primary text-white">Custom Engagement</option>
+            </select>
+          </div>
+          <div class="col-span-2">
+            <label class="block text-tertiary-container font-barlow-condensed font-bold text-sm mb-2 uppercase tracking-widest">Message (Optional)</label>
+            <textarea class="w-full bg-white/10 border border-white/20 text-white focus:ring-tertiary-container focus:border-tertiary-container py-3 px-4 font-manrope placeholder:text-white/40 h-24 resize-none"
+                      name="message" placeholder="Tell us about your partnership goals…"></textarea>
+          </div>
+          <div class="col-span-2 mt-4">
+            <button type="submit"
+                    class="w-full bg-tertiary-container text-on-surface font-bebas-neue text-2xl py-4 uppercase tracking-tighter hover:bg-white hover:text-primary transition-colors duration-300">
+              SEND INQUIRY
+            </button>
+          </div>
+        </form>
+        <div id="sponsor-success" class="hidden mt-8 border border-tertiary-container p-6 text-center">
+          <span class="material-symbols-outlined text-tertiary-container text-4xl block mb-2">check_circle</span>
+          <p class="font-barlow-condensed font-bold text-white text-xl uppercase tracking-wide">Inquiry received! We'll be in touch within 48 hours.</p>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <div id="footer-placeholder"></div>
+
+  <script src="assets/js/animations.js"></script>
+  <script src="assets/js/nav.js"></script>
+  <script src="assets/js/content-loader.js"></script>
+  <script>
+    document.getElementById('sponsor-form')?.addEventListener('submit', function(e) {
+      e.preventDefault();
+      const form = this;
+      fetch('/', { method: 'POST', headers: {'Content-Type': 'application/x-www-form-urlencoded'},
+        body: new URLSearchParams(new FormData(form)).toString() })
+        .then(() => {
+          form.style.display = 'none';
+          document.getElementById('sponsor-success').classList.remove('hidden');
+        }).catch(() => form.submit());
+    });
+  </script>
+
+</body>
+</html>
