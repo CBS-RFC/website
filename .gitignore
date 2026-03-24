@@ -1,4 +1,22 @@
+# Dependencies
 node_modules/
+
+# Compiled CSS (regenerated via npm run build)
 assets/css/main.css
+
+# Secrets — copy _content/site.example.json → _content/site.json and fill in values
+_content/site.json
+
+# Environment files
 .env
+.env.local
+.env*.local
+
+# OS files
 .DS_Store
+Thumbs.db
+
+# Editor files
+.vscode/
+*.suo
+*.user
