@@ -2,6 +2,9 @@
   command = "npm run build"
   publish = "."
 
+[build.environment]
+  SECRETS_SCAN_OMIT_PATHS = "_content/site.json"
+
 [[redirects]]
   from = "/*"
   to = "/404.html"
