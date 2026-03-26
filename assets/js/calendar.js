@@ -212,7 +212,7 @@
 
   function calendarErrorMessage() {
     return `<p class="font-barlow-condensed uppercase tracking-widest text-outline text-center py-12 col-span-3">
-      Events calendar coming soon. Contact us at <a href="mailto:rugby@columbia.edu" class="text-secondary hover:underline">rugby@columbia.edu</a> for details.
+      Events calendar coming soon. Contact us at <a href="mailto:cbs.rugby.fc@gmail.com" class="text-secondary hover:underline">cbs.rugby.fc@gmail.com</a> for details.
     </p>`;
   }
 

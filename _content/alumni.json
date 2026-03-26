@@ -1,10 +1,10 @@
 {
   "featured_alumni": [
     {
-      "name": "Towson Remmel",
-      "graduation_year": "CBS '16",
-      "current_role": "Director, Bank of America Merrill Lynch",
-      "photo": "assets/images/team/towson-remmel.jpg",
+      "name": "Eric Puleio",
+      "graduation_year": "CBS '11",
+      "current_role": "Founder, Narwahl Yacht Charters",
+      "photo": "assets/images/team/eric-puleio.jpg",
       "quote": "AFD!"
     },
     {
@@ -12,14 +12,14 @@
       "graduation_year": "CBS '25",
       "current_role": "Consultant, BCG",
       "photo": "assets/images/team/ale-cartoni.jpg",
-      "quote": "The network I built on the pitch is still my most valuable professional asset."
+      "quote": ""
     },
     {
-      "name": "Isaiah Cyprien",
-      "graduation_year": "CBS '25",
-      "current_role": "Associate, Moelis",
-      "photo": "assets/images/team/isaiah-cyprien.jpg",
-      "quote": "CBS RFC shaped how I show up as a leader every single day."
+      "name": "Towson Remmel",
+      "graduation_year": "CBS '16",
+      "current_role": "Director, Bank of America Merrill Lynch",
+      "photo": "assets/images/team/towson-remmel.jpg",
+      "quote": ""
     }
   ]
 }

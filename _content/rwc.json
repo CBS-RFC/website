@@ -12,7 +12,7 @@
     { "name": "Yale", "confirmed": true, "division": "mens", "logo": "assets/images/logos/logo-yale.jpg" },
     { "name": "NYU (Stern)", "confirmed": true, "division": "mens", "logo": "assets/images/logos/logo-nyu.jpg" },
     { "name": "Kellogg", "confirmed": true, "division": "mens", "logo": "assets/images/logos/logo-kellogg.png" },
-    { "name": "Michigan (Ross)", "confirmed": true, "division": "mens", "logo": "assets/images/logos/logo-michigan.png" },
+    { "name": "Dartmouth (Tuck)", "confirmed": true, "division": "mens", "logo": "assets/images/logos/logo-dartmouth.png" },
     { "name": "Stanford (GSB)", "confirmed": true, "division": "mens", "logo": "assets/images/logos/logo-stanford.png" },
     { "name": "CBS–NYU", "confirmed": true, "division": "womens", "logo": "assets/images/logos/logo-cbs.png" },
     { "name": "Harvard (HBS)", "confirmed": true, "division": "womens", "logo": "assets/images/logos/logo-hbs.png" },
