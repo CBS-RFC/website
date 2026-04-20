@@ -1,6 +1,24 @@
 {
-  "sponsors": [],
+  "sponsors": [
+    {
+      "name": "bb.q Chicken",
+      "logo": "assets/images/sponsors/bbq-chicken.png",
+      "url": "https://www.bbqchicken.com",
+      "tier": "title"
+    }
+  ],
   "tiers": {
+    "title": {
+      "label": "Title Sponsor",
+      "benefits": [
+        "Logo on club jerseys",
+        "Title sponsorship of the MBA Rugby World Cup",
+        "Premier marketing exposure across all event channels",
+        "Dedicated social media campaign features",
+        "On-site brand activation at Governor's Island",
+        "Recognition across all CBS RFC communications"
+      ]
+    },
     "gold": {
       "label": "Premier Partner",
       "benefits": [
