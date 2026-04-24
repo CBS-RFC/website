@@ -2,7 +2,7 @@
   "year": 2026,
   "date": "April 25, 2026",
   "location": "Governor's Island, New York City",
-  "tagline": "14 Teams. 1 Champion.",
+  "tagline": "12 Schools. 1 Champion.",
   "teams": [
     { "name": "Columbia (CBS)", "confirmed": true, "division": "mens", "logo": "assets/images/logos/logo-cbs.png" },
     { "name": "Wharton", "confirmed": true, "division": "mens", "logo": "assets/images/logos/logo-wharton.png" },
@@ -14,7 +14,9 @@
     { "name": "Kellogg", "confirmed": true, "division": "mens", "logo": "assets/images/logos/logo-kellogg.png" },
     { "name": "Dartmouth (Tuck)", "confirmed": true, "division": "mens", "logo": "assets/images/logos/logo-dartmouth.png" },
     { "name": "Stanford (GSB)", "confirmed": true, "division": "mens", "logo": "assets/images/logos/logo-stanford.png" },
-    { "name": "CBS–NYU", "confirmed": true, "division": "womens", "logo": "assets/images/logos/logo-cbs.png" },
+    { "name": "Duke (Fuqua)", "confirmed": true, "division": "mens", "logo": "assets/images/logos/logo-duke.jpg" },
+    { "name": "Michigan (Ross)", "confirmed": true, "division": "mens", "logo": "assets/images/logos/logo-michigan.png" },
+    { "name": "CBS", "confirmed": true, "division": "womens", "logo": "assets/images/logos/logo-cbs.png" },
     { "name": "Harvard (HBS)", "confirmed": true, "division": "womens", "logo": "assets/images/logos/logo-hbs.png" },
     { "name": "Yale", "confirmed": true, "division": "womens", "logo": "assets/images/logos/logo-yale.jpg" },
     { "name": "Booth (Chicago)", "confirmed": true, "division": "womens", "logo": "assets/images/logos/logo-booth.jpg" }

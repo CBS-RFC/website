@@ -3,9 +3,20 @@
     {
       "date": "March 03, 2026",
       "opponent": "NYU",
-      "score": "CBS 10 - 0 NYU",
       "result": "W",
       "competition": "Gotham Cup"
+    },
+    {
+      "date": "March 28, 2026",
+      "opponent": "Harvard",
+      "result": "L",
+      "competition": "Regular Season"
+    },
+    {
+      "date": "April 11, 2026",
+      "opponent": "Yale",
+      "result": "W",
+      "competition": "Regular Season"
     }
   ]
 }

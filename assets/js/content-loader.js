@@ -144,25 +144,35 @@
 
         if (titleSponsors.length > 0) {
           html += `<div class="col-span-full mb-4" data-animate>
-            <p class="font-barlow-condensed uppercase tracking-[0.35em] text-outline text-xs text-center mb-4">Title Sponsor</p>
+            <p class="font-bebas-neue text-3xl text-primary text-center mb-4 tracking-widest">Title Sponsor</p>
+            <div class="flex justify-center">
             ${titleSponsors.map(s => `
-              <a href="${s.url}" target="_blank" rel="noopener"
-                 class="flex flex-col items-center justify-center py-10 px-8 bg-primary hover:bg-primary/90 transition-all group border-t-4 border-tertiary-container">
-                <img src="${s.logo}" alt="${s.name}" class="h-20 w-auto object-contain mb-4 brightness-0 invert"
+              <a href="${s.url}" target="_blank" rel="noopener" style="max-width:56rem;width:100%;"
+                 class="flex flex-col items-center justify-center py-6 px-8 bg-primary hover:bg-primary/90 transition-all group border-t-4 border-tertiary-container">
+                <img src="${s.logo}" alt="${s.name}" class="h-14 w-auto object-contain"
                      onerror="this.style.display='none'"/>
-                <span class="font-bebas-neue text-6xl text-tertiary-container group-hover:text-white transition-colors tracking-tight">${s.name}</span>
-                ${s.tagline ? `<span class="font-barlow-condensed uppercase tracking-widest text-white/50 text-xs mt-2">${s.tagline}</span>` : ''}
               </a>`).join('')}
+            </div>
           </div>`;
         }
 
         if (otherSponsors.length > 0) {
-          html += otherSponsors.map(s => `
-            <a href="${s.url}" target="_blank" rel="noopener"
-               class="filter grayscale hover:grayscale-0 transition-all duration-500 flex justify-center items-center p-4 group" data-animate>
-              <img src="${s.logo}" alt="${s.name}" class="h-12 w-auto object-contain"
-                   onerror="this.parentElement.innerHTML='<span class=\\'font-barlow-condensed text-sm uppercase text-on-surface-variant\\'>${s.name}</span>'"/>
-            </a>`).join('');
+          const tierLabels = { gold: 'Team Sponsor', silver: 'Community Sponsor', bronze: 'Community Sponsor' };
+          const grouped = {};
+          otherSponsors.forEach(s => { (grouped[s.tier] = grouped[s.tier] || []).push(s); });
+          Object.entries(grouped).forEach(([tier, sponsors]) => {
+            html += `<div class="col-span-full mt-6 mb-2" data-animate>
+              <p class="font-bebas-neue text-2xl text-primary text-center tracking-widest">${tierLabels[tier] || tier}</p>
+            </div>`;
+            html += `<div class="col-span-full flex justify-center" data-animate>` +
+              sponsors.map(s => `
+              <a href="${s.url}" target="_blank" rel="noopener" style="max-width:56rem;width:100%;"
+                 class="filter grayscale hover:grayscale-0 transition-all duration-500 flex justify-center items-center p-6 group border border-surface-container-highest">
+                <img src="${s.logo}" alt="${s.name}" class="h-24 w-auto object-contain"
+                     onerror="this.parentElement.innerHTML='<span class=\\'font-barlow-condensed text-sm uppercase text-on-surface-variant\\'>${s.name}</span>'"/>
+              </a>`).join('') +
+              `</div>`;
+          });
         }
 
         sponsorLogos.innerHTML = html;
@@ -423,7 +433,6 @@
                   <th class="text-left px-4 py-3 font-bold">Date</th>
                   <th class="text-left px-4 py-3 font-bold">Opponent</th>
                   <th class="text-left px-4 py-3 font-bold hidden md:table-cell">Competition</th>
-                  <th class="text-center px-4 py-3 font-bold">Score</th>
                   <th class="text-center px-4 py-3 font-bold">Result</th>
                 </tr>
               </thead>
@@ -438,7 +447,6 @@
                       <td class="px-4 py-4 text-on-surface-variant font-semibold whitespace-nowrap">${dateStr}</td>
                       <td class="px-4 py-4 text-primary font-bold uppercase">${r.opponent}</td>
                       <td class="px-4 py-4 text-on-surface-variant hidden md:table-cell uppercase tracking-wide">${r.competition}</td>
-                      <td class="px-4 py-4 text-center text-primary font-bold text-lg tracking-wider">${r.score}</td>
                       <td class="px-4 py-4 text-center">
                         <span style="${s.style}" class="inline-block w-8 h-8 leading-8 text-center font-bold text-sm">${s.label}</span>
                       </td>

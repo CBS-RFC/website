@@ -1,5 +1,15 @@
 {
   "photos": [
+    { "src": "assets/images/gallery/matches/columbia-yale-rugby-game-009.jpg", "category": "matches", "caption": "Columbia vs. Yale" },
+    { "src": "assets/images/gallery/matches/columbia-yale-rugby-game-012.jpg", "category": "matches", "caption": "Columbia vs. Yale" },
+    { "src": "assets/images/gallery/matches/columbia-yale-rugby-game-022.jpg", "category": "matches", "caption": "Columbia vs. Yale" },
+    { "src": "assets/images/gallery/matches/columbia-yale-rugby-game-032.jpg", "category": "matches", "caption": "Columbia vs. Yale" },
+    { "src": "assets/images/gallery/matches/columbia-yale-rugby-game-045.jpg", "category": "matches", "caption": "Columbia vs. Yale" },
+    { "src": "assets/images/gallery/matches/columbia-yale-rugby-game-056.jpg", "category": "matches", "caption": "Columbia vs. Yale" },
+    { "src": "assets/images/gallery/matches/columbia-yale-rugby-game-153.jpg", "category": "matches", "caption": "Columbia vs. Yale" },
+    { "src": "assets/images/gallery/matches/columbia-yale-rugby-game-166.jpg", "category": "matches", "caption": "Columbia vs. Yale" },
+    { "src": "assets/images/gallery/matches/columbia-yale-rugby-game-240.jpg", "category": "matches", "caption": "Columbia vs. Yale" },
+    { "src": "assets/images/gallery/matches/columbia-yale-rugby-game-247.jpg", "category": "matches", "caption": "Columbia vs. Yale" },
     { "src": "assets/images/gallery/matches/gotham-cup-2024-01.jpg", "category": "matches", "caption": "Gotham Cup 2024 — 01" },
     { "src": "assets/images/gallery/matches/gotham-cup-2024-02.jpg", "category": "matches", "caption": "Gotham Cup 2024 — 02" },
     { "src": "assets/images/gallery/matches/gotham-cup-2024-03.jpg", "category": "matches", "caption": "Gotham Cup 2024 — 03" },

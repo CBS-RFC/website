@@ -2,9 +2,15 @@
   "sponsors": [
     {
       "name": "bb.q Chicken",
-      "logo": "assets/images/sponsors/bbq-chicken.png",
+      "logo": "assets/images/sponsors/logo-columbia-02.png",
       "url": "https://www.bbqchicken.com",
       "tier": "title"
+    },
+    {
+      "name": "Macron",
+      "logo": "assets/images/sponsors/Macron-Logo.png",
+      "url": "https://about.macron.com/en/",
+      "tier": "gold"
     }
   ],
   "tiers": {
@@ -20,7 +26,7 @@
       ]
     },
     "gold": {
-      "label": "Premier Partner",
+      "label": "Title Sponsor",
       "benefits": [
         "Logo on club jerseys",
         "Primary marketing exposure and logo placement",
@@ -29,7 +35,7 @@
       ]
     },
     "silver": {
-      "label": "Team Partner",
+      "label": "Team Sponsor",
       "benefits": [
         "Logo on club website",
         "RWC 2026 sponsor recognition",
@@ -37,7 +43,7 @@
       ]
     },
     "bronze": {
-      "label": "Community Partner",
+      "label": "Community Sponsor",
       "benefits": [
         "Logo on club website",
         "Social media features"
