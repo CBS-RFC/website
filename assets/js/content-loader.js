@@ -148,7 +148,7 @@
             ${titleSponsors.map(s => `
               <a href="${s.url}" target="_blank" rel="noopener"
                  class="flex flex-col items-center justify-center py-10 px-8 bg-primary hover:bg-primary/90 transition-all group border-t-4 border-tertiary-container">
-                <img src="${s.logo}" alt="${s.name}" class="h-20 w-auto object-contain mb-4"
+                <img src="${s.logo}" alt="${s.name}" class="w-auto max-w-full object-contain mb-4"
                      onerror="this.style.display='none'"/>
                 <span class="font-bebas-neue text-6xl text-tertiary-container group-hover:text-white transition-colors tracking-tight">${s.name}</span>
                 ${s.tagline ? `<span class="font-barlow-condensed uppercase tracking-widest text-white/50 text-xs mt-2">${s.tagline}</span>` : ''}
