@@ -144,15 +144,15 @@
 
         if (titleSponsors.length > 0) {
           html += `<div class="col-span-full mb-4" data-animate>
-            <p class="font-bebas-neue text-3xl text-primary text-center mb-4 tracking-widest">Title Sponsor</p>
-            <div class="flex justify-center">
+            <p class="font-barlow-condensed uppercase tracking-[0.35em] text-outline text-xs text-center mb-4">Title Sponsor</p>
             ${titleSponsors.map(s => `
-              <a href="${s.url}" target="_blank" rel="noopener" style="max-width:56rem;width:100%;"
-                 class="flex flex-col items-center justify-center py-6 px-8 bg-primary hover:bg-primary/90 transition-all group border-t-4 border-tertiary-container">
-                <img src="${s.logo}" alt="${s.name}" class="h-14 w-auto object-contain"
+              <a href="${s.url}" target="_blank" rel="noopener"
+                 class="flex flex-col items-center justify-center py-10 px-8 bg-primary hover:bg-primary/90 transition-all group border-t-4 border-tertiary-container">
+                <img src="${s.logo}" alt="${s.name}" class="h-20 w-auto object-contain mb-4"
                      onerror="this.style.display='none'"/>
+                <span class="font-bebas-neue text-6xl text-tertiary-container group-hover:text-white transition-colors tracking-tight">${s.name}</span>
+                ${s.tagline ? `<span class="font-barlow-condensed uppercase tracking-widest text-white/50 text-xs mt-2">${s.tagline}</span>` : ''}
               </a>`).join('')}
-            </div>
           </div>`;
         }
 
