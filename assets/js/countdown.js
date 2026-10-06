@@ -3,7 +3,7 @@
  * Reads countdown_target from _content/featured-event.json
  */
 
-(async function () {
+window.startCountdown = async function () {
   const countdownEl = document.getElementById('countdown');
   if (!countdownEl) return;
 
@@ -29,7 +29,7 @@
       countdownEl.innerHTML = `
         <div class="text-center">
           <p class="font-bebas-neue text-5xl text-tertiary-container">EVENT COMPLETE</p>
-          <p class="font-barlow-condensed uppercase tracking-widest text-white/60 mt-2">Thank you to all participants. See you next year.</p>
+          <p class="font-barlow-condensed uppercase tracking-widest text-on-surface-variant mt-2">Thank you to all participants. See you next year.</p>
         </div>`;
       return;
     }
@@ -59,4 +59,9 @@
   }
 
   updateCountdown();
-})();
+};
+if (document.readyState === 'loading') {
+  document.addEventListener('DOMContentLoaded', window.startCountdown);
+} else {
+  window.startCountdown();
+}

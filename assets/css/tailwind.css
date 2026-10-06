@@ -134,5 +134,40 @@ select {
   text-transform: uppercase;
   letter-spacing: 0.2em;
   font-size: 0.75rem;
-  color: rgba(255, 255, 255, 0.6);
+  color: rgba(0, 0, 0, 0.6);
+}
+
+/* =========================================================
+   STORE "LIMITED TIME ONLY" NAV BADGE
+   ========================================================= */
+.store-badge {
+  display: inline-block;
+  margin-left: 0.5rem;
+  padding: 0.1rem 0.4rem;
+  background: #C9A84C;
+  color: #002241;
+  font-family: 'Barlow Condensed', sans-serif;
+  font-weight: 700;
+  font-size: 0.6rem;
+  line-height: 1.1;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  text-align: center;
+  white-space: nowrap;
+  box-shadow: 0 0 0 0 rgba(201, 168, 76, 0.7);
+  transform-origin: center;
+  animation: store-badge-sway 1.6s ease-in-out infinite alternate,
+             store-badge-glow 1.6s ease-out infinite;
+}
+@keyframes store-badge-sway {
+  from { transform: rotate(-7deg) scale(1); }
+  to   { transform: rotate(7deg) scale(1.08); }
+}
+@keyframes store-badge-glow {
+  0%   { box-shadow: 0 0 0 0 rgba(201, 168, 76, 0.6); }
+  70%  { box-shadow: 0 0 0 8px rgba(201, 168, 76, 0); }
+  100% { box-shadow: 0 0 0 0 rgba(201, 168, 76, 0); }
+}
+@media (prefers-reduced-motion: reduce) {
+  .store-badge { animation: none; }
 }

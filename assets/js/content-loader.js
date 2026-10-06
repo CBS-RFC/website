@@ -74,26 +74,25 @@
       if (fe.active) {
         featuredSlot.style.removeProperty('display');
         featuredSlot.innerHTML = `
-          <section class="bg-[#050505] py-24 relative overflow-hidden" data-animate>
-            <div class="max-w-7xl mx-auto px-8 relative z-10 flex flex-col md:flex-row items-end justify-between gap-12">
-              <div class="flex flex-col">
-                <h2 class="font-bebas-neue text-[10vw] md:text-8xl leading-none text-white tracking-tighter">
-                  MBA RUGBY /<br/>WORLD CUP /<br/><span class="text-tertiary-container">2026</span>
+          <section class="py-12 relative overflow-hidden bg-sky-100 m-0">
+            <div class="max-w-7xl mx-auto px-8 relative z-10 flex flex-col md:flex-row items-center justify-between gap-12" data-animate>
+              <div class="flex flex-col md:w-1/2">
+                <h2 class="font-bebas-neue text-[10vw] md:text-8xl leading-none tracking-tighter">
+                  ${fe.title || ''}
                 </h2>
-                <div class="mt-8 flex flex-wrap gap-6 font-barlow-condensed text-white/70 uppercase tracking-[0.2em] text-lg">
-                  <span class="text-white">${fe.subtitle || ''}</span>
-                  <span class="text-tertiary-container">•</span>
-                  <span class="text-white">${fe.description || ''}</span>
+                <div class="mt-8 flex flex-wrap gap-6 font-barlow-condensed uppercase tracking-[0.2em] text-lg text-on-surface-variant">
+                  <span>${fe.subtitle || ''}</span>
                 </div>
-                ${fe.sponsor ? `<p class="mt-5 font-barlow-condensed uppercase tracking-[0.25em] text-white/60 text-xl">${fe.sponsor}</p>` : ''}
               </div>
-              <div class="pb-4">
-                <a href="${fe.cta_url}" class="inline-block border-2 border-tertiary-container text-tertiary-container px-12 py-5 font-barlow-condensed font-bold uppercase tracking-widest text-xl hover:bg-tertiary-container hover:text-primary transition-all group">
-                  ${fe.cta_text} <span class="inline-block transition-transform group-hover:translate-x-2">→</span>
-                </a>
+              <div class="md:w-1/2 flex justify-end">
+                ${fe.countdown_target ? `<div id="countdown" class="transform scale-75 origin-right"></div>` : ''}
               </div>
             </div>
           </section>`;
+        
+        if (fe.countdown_target && window.startCountdown) {
+          window.startCountdown();
+        }
       } else {
         featuredSlot.style.display = 'none';
       }
@@ -215,7 +214,7 @@
   if (alumniProfiles) {
     try {
       const data = await loadContent('alumni');
-      alumniProfiles.innerHTML = data.featured_alumni.map((a, i) => `
+      let html = data.featured_alumni.map((a, i) => `
         <div class="group relative bg-surface overflow-hidden" data-animate data-animate-delay="${i * 100}">
           <div class="aspect-[3/4] overflow-hidden bg-surface-container-highest">
             <img alt="${a.name}" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110 grayscale hover:grayscale-0"
@@ -229,6 +228,33 @@
             <p class="text-surface/60 font-barlow-condensed uppercase tracking-wider text-xs mt-1 relative z-10">${a.graduation_year}</p>
           </div>
         </div>`).join('');
+
+      try {
+        const leadershipData = await loadContent('25-26 leadership');
+        const leadershipTeam = leadershipData["25-26 leadership"];
+        if (leadershipTeam && leadershipTeam.length > 0) {
+          html += `
+          <div class="col-span-full grid grid-cols-2 md:grid-cols-4 lg:grid-cols-6 gap-2 mt-4">
+            ${leadershipTeam.map((person, index) => `
+              <div class="group relative bg-surface overflow-hidden" data-animate data-animate-delay="${(index % 6) * 100}">
+                <div class="aspect-square overflow-hidden bg-surface-container-highest">
+                  <img alt="${person.name}" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110 grayscale hover:grayscale-0"
+                       src="${person.photo}" onerror="this.src='assets/images/team/placeholder.jpg'"/>
+                </div>
+                <div class="absolute inset-0 bg-gradient-to-t from-primary/90 via-transparent to-transparent opacity-80"></div>
+                <div class="absolute bottom-0 left-0 p-3 w-full">
+                  <h3 class="text-lg text-tertiary-container font-bebas-neue relative z-10 leading-none">${person.name}</h3>
+                  <p class="text-surface/80 font-barlow-condensed uppercase tracking-wider text-[10px] mt-1 relative z-10">CBS '26</p>
+                </div>
+              </div>
+            `).join('')}
+          </div>`;
+        }
+      } catch (le) {
+        console.warn('leadership load error', le);
+      }
+
+      alumniProfiles.innerHTML = html;
     } catch (e) {
       console.warn('alumni load error', e);
     }

@@ -1,11 +1,13 @@
 {
   "active": true,
-  "title": "MBA Rugby World Cup 2026",
-  "subtitle": "April 25, 2026 · Governor's Island, NYC",
-  "description": "12 Schools. 1 Champion.",
-  "cta_text": "Event Details",
-  "cta_url": "rugby-world-cup.html",
-  "countdown_target": "2026-04-25T09:00:00",
-  "background_style": "dark",
-  "sponsor": "Presented by bb.q Chicken"
+  "title": "Match vs. Yale, Stern/Fordham",
+  "subtitle": "OCT 10, 2026 | 11:00 AM | Randall’s Island Field #52, NYC",
+  "countdown_target": "2026-10-10T11:00:00",
+  "_commented_out": {
+    "description": "12 Schools. 1 Champion.",
+    "cta_text": "Event Details",
+    "cta_url": "rugby-world-cup.html",
+    "background_style": "dark",
+    "sponsor": "Presented by bb.q Chicken"
+  }
 }

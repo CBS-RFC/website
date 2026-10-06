@@ -2,7 +2,7 @@
   "practice_schedule": [
     {
       "team": "Men's",
-      "days": "Wednesday & Friday",
+      "days": "Friday & Sunday",
       "location": "Riverside Park"
     },
     {
@@ -12,8 +12,8 @@
     },
     {
       "team": "Rugby Happy Hour",
-      "days": "Wednesday Evening",
-      "location": "Jake's Dilemma"
+      "days": "Thursday Evening",
+      "location": "Gin Mill & Other Bars"
     }
   ],
   "player_quotes": [
