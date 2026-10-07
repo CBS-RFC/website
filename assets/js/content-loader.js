@@ -74,7 +74,7 @@
       if (fe.active) {
         featuredSlot.style.removeProperty('display');
         featuredSlot.innerHTML = `
-          <section class="py-12 relative overflow-hidden bg-sky-100 m-0">
+          <section class="py-12 relative overflow-hidden bg-[#e0f2fe] m-0">
             <div class="max-w-7xl mx-auto px-8 relative z-10 flex flex-col md:flex-row items-center justify-between gap-12" data-animate>
               <div class="flex flex-col md:w-1/2">
                 <h2 class="font-bebas-neue text-[10vw] md:text-8xl leading-none tracking-tighter">

@@ -51,7 +51,7 @@ window.startCountdown = async function () {
         ].map(([label, val]) => `
           <div class="flex flex-col items-center">
             <span class="countdown-digit">${label === 'DAYS' ? days : pad(val)}</span>
-            <span class="countdown-label">${label}</span>
+            <span class="countdown-label text-on-surface-variant font-bold">${label}</span>
           </div>`).join('')}
       </div>`;
 
