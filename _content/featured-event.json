@@ -1,10 +1,10 @@
 {
   "active": true,
   "title": "Match vs. Yale, Stern/Fordham",
-  "subtitle": "OCT 10, 2026 | 11:00 AM | Randall’s Island Field #52, NYC",
-  "countdown_target": "2026-10-10T11:00:00",
+  "subtitle": "OCT 10, 2026 | 2:00 PM | Central Park North Meadow Field #6, NYC",
+  "countdown_target": "2026-10-10T14:00:00",
+  "description": "Postgame Drink-up at Amsterdam Ave. Living in the dream.",
   "_commented_out": {
-    "description": "12 Schools. 1 Champion.",
     "cta_text": "Event Details",
     "cta_url": "rugby-world-cup.html",
     "background_style": "dark",

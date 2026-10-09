@@ -83,6 +83,7 @@
                 <div class="mt-8 flex flex-wrap gap-6 font-barlow-condensed uppercase tracking-[0.2em] text-lg text-on-surface-variant">
                   <span>${fe.subtitle || ''}</span>
                 </div>
+                  ${fe.description ? `<p class="mt-4 font-manrope text-base text-on-surface-variant max-w-md italic tracking-widest">${fe.description}</p>` : ""}
               </div>
               <div class="md:w-1/2 flex justify-end">
                 ${fe.countdown_target ? `<div id="countdown" class="transform scale-75 origin-right"></div>` : ''}
