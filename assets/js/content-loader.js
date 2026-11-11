@@ -77,16 +77,29 @@
           <section class="py-12 relative overflow-hidden bg-[#e0f2fe] m-0">
             <div class="max-w-7xl mx-auto px-8 relative z-10 flex flex-col md:flex-row items-center justify-between gap-12" data-animate>
               <div class="flex flex-col md:w-1/2">
-                <h2 class="font-bebas-neue text-[10vw] md:text-8xl leading-none tracking-tighter">
-                  ${fe.title || ''}
+                <h2 class="font-bebas-neue text-[10vw] md:text-8xl leading-none tracking-tighter text-primary">
+                  ${fe.title_prefix ? `<span class="text-tertiary-container">${fe.title_prefix}</span> ` : ''}${fe.title || ''}
                 </h2>
                 <div class="mt-8 flex flex-wrap gap-6 font-barlow-condensed uppercase tracking-[0.2em] text-lg text-on-surface-variant">
                   <span>${fe.subtitle || ''}</span>
                 </div>
-                  ${fe.description ? `<p class="mt-4 font-manrope text-base text-on-surface-variant max-w-md italic tracking-widest">${fe.description}</p>` : ""}
+                ${fe.description ? `<p class="mt-4 font-manrope text-base text-on-surface-variant max-w-md italic tracking-widest">${fe.description}</p>` : ""}
               </div>
-              <div class="md:w-1/2 flex justify-end">
-                ${fe.countdown_target ? `<div id="countdown" class="transform scale-75 origin-right"></div>` : ''}
+              <div class="md:w-1/2 flex flex-col items-center md:items-end gap-8">
+                ${fe.teams && fe.teams.length === 2 ? `
+                  <div class="flex items-center gap-6">
+                    <div class="bg-surface border-b-4 border-tertiary-container px-6 py-4 flex flex-col items-center text-center gap-2 shadow-sm">
+                      <img src="${fe.teams[0].logo}" alt="${fe.teams[0].name}" class="h-16 w-auto object-contain"/>
+                      <span class="font-barlow-condensed font-bold text-primary uppercase tracking-wide text-sm">${fe.teams[0].name}</span>
+                    </div>
+                    <span class="font-bebas-neue text-4xl text-tertiary-container">VS</span>
+                    <div class="bg-surface border-b-4 border-tertiary-container px-6 py-4 flex flex-col items-center text-center gap-2 shadow-sm">
+                      <img src="${fe.teams[1].logo}" alt="${fe.teams[1].name}" class="h-16 w-auto object-contain"/>
+                      <span class="font-barlow-condensed font-bold text-primary uppercase tracking-wide text-sm">${fe.teams[1].name}</span>
+                    </div>
+                  </div>
+                ` : ''}
+                ${fe.countdown_target ? `<div id="countdown"></div>` : ''}
               </div>
             </div>
           </section>`;
@@ -472,7 +485,12 @@
                   return `
                     <tr class="${rowBg} border-b border-outline-variant/20 hover:bg-surface-container transition-colors">
                       <td class="px-4 py-4 text-on-surface-variant font-semibold whitespace-nowrap">${dateStr}</td>
-                      <td class="px-4 py-4 text-primary font-bold uppercase">${r.opponent}</td>
+                      <td class="px-4 py-4 text-primary font-bold uppercase">
+                        <div class="flex items-center gap-3">
+                          ${r.logo ? `<img src="${r.logo}" alt="${r.opponent}" class="w-8 h-8 object-contain shrink-0 bg-white p-0.5 border border-outline-variant/30" onerror="this.style.display='none'"/>` : ''}
+                          <span>${r.opponent}</span>
+                        </div>
+                      </td>
                       <td class="px-4 py-4 text-on-surface-variant hidden md:table-cell uppercase tracking-wide">${r.competition}</td>
                       <td class="px-4 py-4 text-center">
                         <span style="${s.style}" class="inline-block w-8 h-8 leading-8 text-center font-bold text-sm">${s.label}</span>

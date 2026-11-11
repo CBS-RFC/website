@@ -1,22 +1,67 @@
 {
   "results": [
     {
-      "date": "March 03, 2026",
-      "opponent": "NYU",
+      "date": "November 7, 2026",
+      "opponent": "Harvard",
+      "logo": "assets/images/logos/logo-hbs.png",
+      "result": "L",
+      "competition": "Hogfest"
+    },
+    {
+      "date": "November 7, 2026",
+      "opponent": "Wharton Team A (Red)",
+      "logo": "assets/images/logos/logo-wharton.png",
+      "result": "L",
+      "competition": "Hogfest"
+    },
+    {
+      "date": "November 7, 2026",
+      "opponent": "Yale",
+      "logo": "assets/images/logos/logo-yale.jpg",
       "result": "W",
-      "competition": "Gotham Cup"
+      "competition": "Hogfest"
+    },
+    {
+      "date": "October 24, 2026",
+      "opponent": "Harvard",
+      "logo": "assets/images/logos/logo-hbs.png",
+      "result": "L",
+      "competition": "Founders & Forefathers Cup"
+    },
+    {
+      "date": "October 10, 2026",
+      "opponent": "Yale",
+      "logo": "assets/images/logos/logo-yale.jpg",
+      "result": "W",
+      "competition": "Regular Season"
+    },
+    {
+      "date": "October 10, 2026",
+      "opponent": "NYU",
+      "logo": "assets/images/logos/logo-nyu.jpg",
+      "result": "W",
+      "competition": "Regular Season"
+    },
+  {
+      "date": "April 11, 2026",
+      "opponent": "Yale",
+      "logo": "assets/images/logos/logo-yale.jpg",
+      "result": "W",
+      "competition": "Regular Season"
     },
     {
       "date": "March 28, 2026",
       "opponent": "Harvard",
+      "logo": "assets/images/logos/logo-hbs.png",
       "result": "L",
       "competition": "Regular Season"
     },
     {
-      "date": "April 11, 2026",
-      "opponent": "Yale",
+      "date": "March 03, 2026",
+      "opponent": "NYU",
+      "logo": "assets/images/logos/logo-nyu.jpg",
       "result": "W",
-      "competition": "Regular Season"
+      "competition": "Gotham Cup"
     }
   ]
 }

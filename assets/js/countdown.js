@@ -42,7 +42,7 @@ window.startCountdown = async function () {
     const pad = n => String(n).padStart(2, '0');
 
     countdownEl.innerHTML = `
-      <div class="flex flex-wrap justify-center gap-8 md:gap-16">
+      <div class="flex flex-wrap justify-center gap-8 md:gap-10">
         ${[
           ['DAYS',    days],
           ['HOURS',   hours],
